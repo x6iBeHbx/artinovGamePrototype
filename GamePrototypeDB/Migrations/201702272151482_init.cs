@@ -106,7 +106,7 @@ namespace GamePrototypeDB.Migrations
                 .Index(t => t.SpecialThinkBonus_Id);
             
             CreateTable(
-                "dbo.Thinks",
+                "dbo.Things",
                 c => new
                     {
                         Id = c.Guid(nullable: false),
@@ -208,7 +208,7 @@ namespace GamePrototypeDB.Migrations
                         CharacterWarehouse_Id = c.Guid(nullable: false),
                     })
                 .PrimaryKey(t => new { t.Thinks_Id, t.CharacterWarehouse_Id })
-                .ForeignKey("dbo.Thinks", t => t.Thinks_Id, cascadeDelete: true)
+                .ForeignKey("dbo.Things", t => t.Thinks_Id, cascadeDelete: true)
                 .ForeignKey("dbo.CharacterWarehouses", t => t.CharacterWarehouse_Id, cascadeDelete: true)
                 .Index(t => t.Thinks_Id)
                 .Index(t => t.CharacterWarehouse_Id);
@@ -220,9 +220,9 @@ namespace GamePrototypeDB.Migrations
             DropForeignKey("dbo.UserProfiles", "UserCharacter_Id", "dbo.Characters");
             DropForeignKey("dbo.Characters", "CharacterWarehouse_Id", "dbo.CharacterWarehouses");
             DropForeignKey("dbo.Characters", "CharacterEquipment_Id", "dbo.CharacterEquipments");
-            DropForeignKey("dbo.Thinks", "SpecialThinkBonus_Id", "dbo.SpecialThinkBonus");
+            DropForeignKey("dbo.Things", "SpecialThinkBonus_Id", "dbo.SpecialThinkBonus");
             DropForeignKey("dbo.ThinksCharacterWarehouses", "CharacterWarehouse_Id", "dbo.CharacterWarehouses");
-            DropForeignKey("dbo.ThinksCharacterWarehouses", "Thinks_Id", "dbo.Thinks");
+            DropForeignKey("dbo.ThinksCharacterWarehouses", "Thinks_Id", "dbo.Things");
             DropForeignKey("dbo.Scrolls", "SpecialThinkBonus_Id", "dbo.SpecialThinkBonus");
             DropForeignKey("dbo.ScrollsCharacterWarehouses", "CharacterWarehouse_Id", "dbo.CharacterWarehouses");
             DropForeignKey("dbo.ScrollsCharacterWarehouses", "Scrolls_Id", "dbo.Scrolls");
@@ -238,7 +238,7 @@ namespace GamePrototypeDB.Migrations
             DropIndex("dbo.Characters", new[] { "CharacterWarehouse_Id" });
             DropIndex("dbo.Characters", new[] { "CharacterEquipment_Id" });
             DropIndex("dbo.UserProfiles", new[] { "UserCharacter_Id" });
-            DropIndex("dbo.Thinks", new[] { "SpecialThinkBonus_Id" });
+            DropIndex("dbo.Things", new[] { "SpecialThinkBonus_Id" });
             DropIndex("dbo.Scrolls", new[] { "SpecialThinkBonus_Id" });
             DropIndex("dbo.Potions", new[] { "SpecialThinkBonus_Id" });
             DropTable("dbo.ThinksCharacterWarehouses");
@@ -246,7 +246,7 @@ namespace GamePrototypeDB.Migrations
             DropTable("dbo.PotionsCharacterWarehouses");
             DropTable("dbo.Characters");
             DropTable("dbo.UserProfiles");
-            DropTable("dbo.Thinks");
+            DropTable("dbo.Things");
             DropTable("dbo.Scrolls");
             DropTable("dbo.SpecialThinkBonus");
             DropTable("dbo.Potions");

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GamePrototype.core
+namespace GamePrototypeClasses.core
 {
     public class IdEntity
     {

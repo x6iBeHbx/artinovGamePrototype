@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
-using GamePrototype.enums;
-using GamePrototype.game.thinks;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.enums;
+using GamePrototypeClasses.game.thinks;
 
-namespace GamePrototype.core
+namespace GamePrototypeClasses.core
 {
     public class ThinkEntity : MainOptionsEntity
     {

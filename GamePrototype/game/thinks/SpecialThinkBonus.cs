@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
-using GamePrototype.enums;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.enums;
 
-namespace GamePrototype.game.thinks
+namespace GamePrototypeClasses.game.thinks
 {
     public class SpecialThinkBonus : ValueEntity
     {

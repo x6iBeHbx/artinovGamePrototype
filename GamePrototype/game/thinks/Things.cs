@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
-using GamePrototype.enums;
-using GamePrototype.game.character;
+using GamePrototypeClasses.enums;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.game.character;
 
-namespace GamePrototype.game.thinks
+namespace GamePrototypeClasses.game.thinks
 {
     public class Thinks : ThinkEntity
     {

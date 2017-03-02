@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
+using GamePrototypeClasses.core;
 
-namespace GamePrototype.game.character
+namespace GamePrototypeClasses.game.character
 {
     public class CharacterEquipment  : IdEntity
     {

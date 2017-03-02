@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
-using GamePrototype.game.character;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.game.character;
 
-namespace GamePrototype.game.thinks
+namespace GamePrototypeClasses.game.thinks
 {
     public class Scrolls : ThinkEntity
     {

@@ -1,4 +1,4 @@
-﻿namespace GamePrototype.enums
+﻿namespace GamePrototypeClasses.enums
 {
     public enum SpecialThinkBonusTimeType
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using GamePrototype.core;
-using GamePrototype.game.character;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.game.character;
 
-namespace GamePrototype.game.thinks
+namespace GamePrototypeClasses.game.thinks
 {
     public class Potions : ThinkEntity
     {

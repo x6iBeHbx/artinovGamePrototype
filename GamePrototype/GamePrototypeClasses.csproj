@@ -7,8 +7,8 @@
     <ProjectGuid>{4435E788-E418-42AD-AB03-3A1204B86F0F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GamePrototype</RootNamespace>
-    <AssemblyName>GamePrototype</AssemblyName>
+    <RootNamespace>GamePrototypeClasses</RootNamespace>
+    <AssemblyName>GamePrototypeClasses</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
