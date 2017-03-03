@@ -10,25 +10,25 @@ namespace GamePrototypeClasses.game.character
 {
     public class CharacterEquipment  : IdEntity
     {
-        public Things HemletId { get; set; }
-        public Things ArmorId { get; set; }
-        public Things BootsId { get; set; }
-        public Things GlovesId { get; set; }
-        public Things CloakId { get; set; }
-        public Things NecklaceId { get; set; }
-        public Things EarringsId { get; set; }
-        public Things RingsId1 { get; set; }
-        public Things RingsId2 { get; set; }
-        public Things RingsId3 { get; set; }
-        public Things WeaponId1 { get; set; }
-        public Things WeaponId2 { get; set; }
-        public Scrolls ScrollId1 { get; set; }
-        public Scrolls ScrollId2 { get; set; }
-        public Scrolls ScrollId3 { get; set; }
-        public Potions PotionId1 { get; set; }
-        public Potions PotionId2 { get; set; }
-        public Potions PotionId3 { get; set; }
-        public Potions PotionId4 { get; set; }
-        public Potions PotionId5 { get; set; }
+        public Things Hemlet { get; set; }
+        public Things Armor { get; set; }
+        public Things Boots { get; set; }
+        public Things Gloves { get; set; }
+        public Things Cloak { get; set; }
+        public Things Necklace { get; set; }
+        public Things Earrings { get; set; }
+        public Things Rings1 { get; set; }
+        public Things Rings2 { get; set; }
+        public Things Rings3 { get; set; }
+        public Things Weapon1 { get; set; }
+        public Things Weapon2 { get; set; }
+        public Scrolls Scroll1 { get; set; }
+        public Scrolls Scroll2 { get; set; }
+        public Scrolls Scroll3 { get; set; }
+        public Potions Potion1 { get; set; }
+        public Potions Potion2 { get; set; }
+        public Potions Potion3 { get; set; }
+        public Potions Potion4 { get; set; }
+        public Potions Potion5 { get; set; }
     }
 }

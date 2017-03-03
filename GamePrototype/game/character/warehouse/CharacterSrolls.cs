@@ -12,8 +12,8 @@ namespace GamePrototypeClasses.game.character.warehouse
     public class CharacterSrolls : ValueEntity
     {
         [Required]
-        public Scrolls ScrollId { get; set; }
+        public Scrolls Scroll { get; set; }
         [Required]
-        public CharacterWarehouse CharacterWarehouseId { get; set; }
+        public CharacterWarehouse CharacterWarehouse { get; set; }
     }
 }

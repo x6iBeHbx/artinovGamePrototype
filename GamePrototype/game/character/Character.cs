@@ -13,9 +13,9 @@ namespace GamePrototypeClasses.game.character
     public class Character : MainOptionsEntity
     {
         [Required]
-        public CharacterWarehouse CharacterWarehouseId { get; set; }
+        public CharacterWarehouse CharacterWarehouse { get; set; }
         [Required]
-        public CharacterEquipment CharacterEquipmentId { get; set; }
+        public CharacterEquipment CharacterEquipment { get; set; }
         [Required]
         public CharacterTypeEnum CharacterType { get; set; }
     }

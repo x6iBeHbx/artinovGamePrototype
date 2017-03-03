@@ -12,8 +12,8 @@ namespace GamePrototypeClasses.game.character.warehouse
     public class CharacterThings : ValueEntity
     {
         [Required]
-        public Things ThingId { get; set; }
+        public Things Thing { get; set; }
         [Required]
-        public CharacterWarehouse CharacterWarehouseId { get; set; }
+        public CharacterWarehouse CharacterWarehouse { get; set; }
     }
 }

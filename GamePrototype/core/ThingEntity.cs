@@ -15,7 +15,7 @@ namespace GamePrototypeClasses.core
         [Required]
         public ThinksTypeEnum ThinksType { get; set; }
         [Required]
-        public SpecialThingBonus SpecialThingBonusId {get; set; }
+        public SpecialThingBonus SpecialThingBonus {get; set; }
         [Required]
         public int Price { get; set; }
     }
