@@ -13,7 +13,7 @@ namespace GamePrototypeDB.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201702272151482_init"; }
+            get { return "201703032246041_init"; }
         }
         
         string IMigrationMetadata.Source

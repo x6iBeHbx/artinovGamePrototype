@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using GamePrototype.core;
-using GamePrototype.enums;
-using GamePrototype.game.character;
+using GamePrototypeClasses.core;
+using GamePrototypeClasses.enums;
+using GamePrototypeClasses.game.character;
 
-namespace GamePrototype.user
+namespace GamePrototypeClasses.user
 {
     public class UserProfile : NameEntity
     {
+
         public string LastName { set; get; }
         public string EMail { set; get; }
         public int Age { set; get; }
