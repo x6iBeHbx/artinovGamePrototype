@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using GamePrototypeClasses.enums;
 using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.character.warehouse;
 
 namespace GamePrototypeClasses.game.thinks
 {
-    public class Thinks : ThinkEntity
+    public class Things : ThingEntity
     {
-        public ICollection<CharacterWarehouse> CharacterWarehouses { get; set; }
     }
 }

@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.character.warehouse;
 
 namespace GamePrototypeClasses.game.thinks
 {
-    public class Scrolls : ThinkEntity
+    public class Scrolls : ThingEntity
     {
-        public ICollection<CharacterWarehouse> CharacterWarehouses { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,13 @@ using GamePrototypeClasses.game.thinks;
 
 namespace GamePrototypeClasses.core
 {
-    public class ThinkEntity : MainOptionsEntity
+    public class ThingEntity : MainOptionsEntity
     {
+        [Required]
         public ThinksTypeEnum ThinksType { get; set; }
-        public SpecialThinkBonus SpecialThinkBonus {get; set; }
+        [Required]
+        public SpecialThingBonus SpecialThingBonusId {get; set; }
+        [Required]
         public int Price { get; set; }
     }
 }

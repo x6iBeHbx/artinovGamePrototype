@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototype", "GamePrototype\GamePrototype.csproj", "{4435E788-E418-42AD-AB03-3A1204B86F0F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeClasses", "GamePrototype\GamePrototypeClasses.csproj", "{4435E788-E418-42AD-AB03-3A1204B86F0F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeDB", "GamePrototypeDB\GamePrototypeDB.csproj", "{92756F71-04AC-4254-BC66-7B1A86819CA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeWcf", "GamePrototypeWcf\GamePrototypeWcf.csproj", "{217B06C8-D3DE-4D3B-BB3D-5181ACCAB2FF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewClient", "ViewClient\ViewClient.csproj", "{C39A417A-F243-4464-A466-5C27B3CC93CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeDBApi", "GamePrototypeDBApi\GamePrototypeDBApi.csproj", "{A3A27154-3912-46A3-99D2-080DBCF7B234}"
 EndProject
@@ -31,10 +29,6 @@ Global
 		{217B06C8-D3DE-4D3B-BB3D-5181ACCAB2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{217B06C8-D3DE-4D3B-BB3D-5181ACCAB2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{217B06C8-D3DE-4D3B-BB3D-5181ACCAB2FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C39A417A-F243-4464-A466-5C27B3CC93CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C39A417A-F243-4464-A466-5C27B3CC93CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C39A417A-F243-4464-A466-5C27B3CC93CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C39A417A-F243-4464-A466-5C27B3CC93CB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Release|Any CPU.ActiveCfg = Release|Any CPU

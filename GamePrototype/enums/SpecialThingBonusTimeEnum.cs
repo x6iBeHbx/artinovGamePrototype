@@ -1,6 +1,6 @@
 ﻿namespace GamePrototypeClasses.enums
 {
-    public enum SpecialThinkBonusTimeType
+    public enum SpecialThingBonusTimeEnum
     {
         Forever,
         OneMove,

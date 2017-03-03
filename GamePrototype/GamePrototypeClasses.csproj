@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,20 +47,23 @@
     <Compile Include="core\LevelEntity.cs" />
     <Compile Include="core\MainOptionsEntity.cs" />
     <Compile Include="core\NameEntity.cs" />
-    <Compile Include="core\ThinkEntity.cs" />
+    <Compile Include="core\ThingEntity.cs" />
     <Compile Include="core\ValueEntity.cs" />
     <Compile Include="enums\CharacterTypeEnum.cs" />
     <Compile Include="enums\SpecialThinkBonusEnum.cs" />
-    <Compile Include="enums\SpecialThinkBonusTimeType.cs" />
+    <Compile Include="enums\SpecialThingBonusTimeEnum.cs" />
     <Compile Include="enums\ThinksTypeEnum.cs" />
     <Compile Include="enums\UserSexEnum.cs" />
     <Compile Include="game\character\Character.cs" />
     <Compile Include="game\character\CharacterEquipment.cs" />
-    <Compile Include="game\character\CharacterWarehouse.cs" />
+    <Compile Include="game\character\warehouse\CharacterPotions.cs" />
+    <Compile Include="game\character\warehouse\CharacterSrolls.cs" />
+    <Compile Include="game\character\warehouse\CharacterThings.cs" />
+    <Compile Include="game\character\warehouse\CharacterWarehouse.cs" />
     <Compile Include="game\thinks\Potions.cs" />
     <Compile Include="game\thinks\Scrolls.cs" />
-    <Compile Include="game\thinks\SpecialThinkBonus.cs" />
-    <Compile Include="game\thinks\Thinks.cs" />
+    <Compile Include="game\thinks\SpecialThingBonus.cs" />
+    <Compile Include="game\thinks\Things.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="user\UserProfile.cs" />

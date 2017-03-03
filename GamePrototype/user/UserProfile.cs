@@ -11,6 +11,7 @@ namespace GamePrototypeClasses.user
 {
     public class UserProfile : NameEntity
     {
+
         public string LastName { set; get; }
         public string EMail { set; get; }
         public int Age { set; get; }

@@ -54,10 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameDBContext.cs" />
-    <Compile Include="Migrations\201702272151482_init.cs" />
-    <Compile Include="Migrations\201702272151482_init.Designer.cs">
-      <DependentUpon>201702272151482_init.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,15 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GamePrototype\GamePrototype.csproj">
+    <ProjectReference Include="..\GamePrototype\GamePrototypeClasses.csproj">
       <Project>{4435e788-e418-42ad-ab03-3a1204b86f0f}</Project>
-      <Name>GamePrototype</Name>
+      <Name>GamePrototypeClasses</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702272151482_init.resx">
-      <DependentUpon>201702272151482_init.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

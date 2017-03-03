@@ -4,30 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GamePrototypeClasses.core;
+using GamePrototypeClasses.game.thinks;
 
 namespace GamePrototypeClasses.game.character
 {
     public class CharacterEquipment  : IdEntity
     {
-        public int Hemlet { get; set; }
-        public int Armor { get; set; }
-        public int Boots { get; set; }
-        public int Gloves { get; set; }
-        public int Cloak { get; set; }
-        public int Necklace { get; set; }
-        public int Earrings { get; set; }
-        public int Rings1 { get; set; }
-        public int Rings2 { get; set; }
-        public int Rings3 { get; set; }
-        public int Weapon1 { get; set; }
-        public int Weapon2 { get; set; }
-        public int Scroll1 { get; set; }
-        public int Scroll2 { get; set; }
-        public int Scroll3 { get; set; }
-        public int Potion1 { get; set; }
-        public int Potion2 { get; set; }
-        public int Potion3 { get; set; }
-        public int Potion4 { get; set; }
-        public int Potion5 { get; set; }
+        public Things HemletId { get; set; }
+        public Things ArmorId { get; set; }
+        public Things BootsId { get; set; }
+        public Things GlovesId { get; set; }
+        public Things CloakId { get; set; }
+        public Things NecklaceId { get; set; }
+        public Things EarringsId { get; set; }
+        public Things RingsId1 { get; set; }
+        public Things RingsId2 { get; set; }
+        public Things RingsId3 { get; set; }
+        public Things WeaponId1 { get; set; }
+        public Things WeaponId2 { get; set; }
+        public Scrolls ScrollId1 { get; set; }
+        public Scrolls ScrollId2 { get; set; }
+        public Scrolls ScrollId3 { get; set; }
+        public Potions PotionId1 { get; set; }
+        public Potions PotionId2 { get; set; }
+        public Potions PotionId3 { get; set; }
+        public Potions PotionId4 { get; set; }
+        public Potions PotionId5 { get; set; }
     }
 }
