@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeDB", "GameProt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeDBApi", "GamePrototypeDBApi\GamePrototypeDBApi.csproj", "{A3A27154-3912-46A3-99D2-080DBCF7B234}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeWcf", "GamePrototypeWcf\GamePrototypeWcf.csproj", "{001FC53D-646A-4DDF-87D4-63033A4031D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GamePrototypeClient", "GamePrototypeClient\GamePrototypeClient.csproj", "{05618464-6A79-4DEA-AC0E-BF523D628164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3A27154-3912-46A3-99D2-080DBCF7B234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001FC53D-646A-4DDF-87D4-63033A4031D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001FC53D-646A-4DDF-87D4-63033A4031D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001FC53D-646A-4DDF-87D4-63033A4031D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001FC53D-646A-4DDF-87D4-63033A4031D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05618464-6A79-4DEA-AC0E-BF523D628164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05618464-6A79-4DEA-AC0E-BF523D628164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05618464-6A79-4DEA-AC0E-BF523D628164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05618464-6A79-4DEA-AC0E-BF523D628164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
