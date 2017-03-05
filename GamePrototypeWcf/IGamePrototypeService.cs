@@ -111,13 +111,6 @@ namespace GamePrototypeWcf
         //Spacial thing type
         [OperationContract]
         List<SpecialThingBonus> GetAllSpecialThingBonuses();
-
-        [OperationContract]
-        List<SpecialThingBonus> GetAllSpecialThingTypeByType(SpecialThinkBonusEnum type);
-        [OperationContract]
-        [OperationContract]
-        [OperationContract]
-
-
+        //TODO: need continue create this class
     }
 }
