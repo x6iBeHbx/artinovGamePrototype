@@ -11,44 +11,44 @@ namespace GamePrototypeDB
 {
     public class BaseRepository<T> where T : IdEntity
     {
-        private readonly GameDBContext _context;
+        protected readonly GameDBContext Context;
         public BaseRepository()
         {
-            _context = new GameDBContext();
+            Context = new GameDBContext();
         }
 
-        public IQueryable<T> GetAll()
+        public virtual IQueryable<T> GetAll()
         {
-            return _context.Set<T>();
+            return Context.Set<T>();
         }
 
         public void Add(T entity)
         {
-            _context.Set<T>().Add(entity);
-            _context.SaveChanges();
+            Context.Set<T>().Add(entity);
+            Context.SaveChanges();
         }
 
         public void Remove(T entity)
         {
-            _context.Set<T>().Remove(entity);
-            _context.SaveChanges();
+            Context.Set<T>().Remove(entity);
+            Context.SaveChanges();
         }
         public void RemoveAt(Guid id)
         {
-            T entity = _context.Set<T>().Find(id);
-            _context.Set<T>().Remove(entity);
-            _context.SaveChanges();
+            T entity = Context.Set<T>().Find(id);
+            Context.Set<T>().Remove(entity);
+            Context.SaveChanges();
         }
 
-        public T GetById(Guid id)
+        public virtual T GetById(Guid id)
         {
-            return _context.Set<T>().Find(id);
+            return Context.Set<T>().Find(id);
         }
 
         public void Update(T entity)
         {
-            _context.Entry(entity).State = EntityState.Modified;
-            _context.SaveChanges();
+            Context.Entry(entity).State = EntityState.Modified;
+            Context.SaveChanges();
         }
     }
 }
