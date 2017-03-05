@@ -52,7 +52,7 @@
     <Compile Include="enums\CharacterTypeEnum.cs" />
     <Compile Include="enums\SpecialThinkBonusEnum.cs" />
     <Compile Include="enums\SpecialThingBonusTimeEnum.cs" />
-    <Compile Include="enums\ThinksTypeEnum.cs" />
+    <Compile Include="enums\ThingsTypeEnum.cs" />
     <Compile Include="enums\UserSexEnum.cs" />
     <Compile Include="game\character\Character.cs" />
     <Compile Include="game\character\CharacterEquipment.cs" />

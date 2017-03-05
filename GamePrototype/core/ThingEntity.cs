@@ -13,7 +13,7 @@ namespace GamePrototypeClasses.core
     public class ThingEntity : MainOptionsEntity
     {
         [Required]
-        public ThinksTypeEnum ThinksType { get; set; }
+        public ThingsTypeEnum ThingsType { get; set; }
         [Required]
         public SpecialThingBonus SpecialThingBonus {get; set; }
         [Required]

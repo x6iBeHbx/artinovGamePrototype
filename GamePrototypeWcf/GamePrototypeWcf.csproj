@@ -88,6 +88,12 @@
     <Compile Include="IGamePrototypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamePrototype\GamePrototypeClasses.csproj">
+      <Project>{4435e788-e418-42ad-ab03-3a1204b86f0f}</Project>
+      <Name>GamePrototypeClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
