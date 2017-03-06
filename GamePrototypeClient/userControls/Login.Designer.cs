@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.LoginBtn = new System.Windows.Forms.Button();
-            this.loginLable = new System.Windows.Forms.TextBox();
-            this.passwordLable = new System.Windows.Forms.TextBox();
+            this.LoginLable = new System.Windows.Forms.TextBox();
+            this.PasswordLable = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.registerBtn = new System.Windows.Forms.Button();
+            this.ToRegisterBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginBtn
@@ -45,25 +45,25 @@
             this.LoginBtn.Text = "Start";
             this.LoginBtn.UseVisualStyleBackColor = true;
             // 
-            // loginLable
+            // LoginLable
             // 
-            this.loginLable.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.loginLable.Location = new System.Drawing.Point(253, 103);
-            this.loginLable.MaxLength = 500;
-            this.loginLable.Name = "loginLable";
-            this.loginLable.Size = new System.Drawing.Size(221, 20);
-            this.loginLable.TabIndex = 1;
-            this.loginLable.Text = "Login";
+            this.LoginLable.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.LoginLable.Location = new System.Drawing.Point(253, 103);
+            this.LoginLable.MaxLength = 500;
+            this.LoginLable.Name = "LoginLable";
+            this.LoginLable.Size = new System.Drawing.Size(221, 20);
+            this.LoginLable.TabIndex = 1;
+            this.LoginLable.Text = "Login";
             // 
-            // passwordLable
+            // PasswordLable
             // 
-            this.passwordLable.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.passwordLable.Location = new System.Drawing.Point(253, 137);
-            this.passwordLable.MaxLength = 500;
-            this.passwordLable.Name = "passwordLable";
-            this.passwordLable.Size = new System.Drawing.Size(221, 20);
-            this.passwordLable.TabIndex = 2;
-            this.passwordLable.Text = "Password";
+            this.PasswordLable.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.PasswordLable.Location = new System.Drawing.Point(253, 137);
+            this.PasswordLable.MaxLength = 500;
+            this.PasswordLable.Name = "PasswordLable";
+            this.PasswordLable.Size = new System.Drawing.Size(221, 20);
+            this.PasswordLable.TabIndex = 2;
+            this.PasswordLable.Text = "Password";
             // 
             // label1
             // 
@@ -75,14 +75,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Some Game Prototype ";
             // 
-            // registerBtn
+            // ToRegisterBtn
             // 
-            this.registerBtn.Location = new System.Drawing.Point(322, 315);
-            this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(75, 23);
-            this.registerBtn.TabIndex = 4;
-            this.registerBtn.Text = "Register";
-            this.registerBtn.UseVisualStyleBackColor = true;
+            this.ToRegisterBtn.Location = new System.Drawing.Point(322, 315);
+            this.ToRegisterBtn.Name = "ToRegisterBtn";
+            this.ToRegisterBtn.Size = new System.Drawing.Size(75, 23);
+            this.ToRegisterBtn.TabIndex = 4;
+            this.ToRegisterBtn.Text = "Register";
+            this.ToRegisterBtn.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
@@ -90,10 +90,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.registerBtn);
+            this.Controls.Add(this.ToRegisterBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.passwordLable);
-            this.Controls.Add(this.loginLable);
+            this.Controls.Add(this.PasswordLable);
+            this.Controls.Add(this.LoginLable);
             this.Controls.Add(this.LoginBtn);
             this.Name = "Login";
             this.Size = new System.Drawing.Size(720, 360);
@@ -105,9 +105,9 @@
         #endregion
 
         private System.Windows.Forms.Button LoginBtn;
-        private System.Windows.Forms.TextBox loginLable;
-        private System.Windows.Forms.TextBox passwordLable;
+        private System.Windows.Forms.TextBox LoginLable;
+        private System.Windows.Forms.TextBox PasswordLable;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button registerBtn;
+        private System.Windows.Forms.Button ToRegisterBtn;
     }
 }
