@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("GamePrototypeDBApi")]
+[assembly: AssemblyTitle("GamePrototypeLogic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("GamePrototypeDBApi")]
+[assembly: AssemblyProduct("GamePrototypeLogic")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a3a27154-3912-46a3-99d2-080dbcf7b234")]
+[assembly: Guid("e9f1eda0-b10e-4768-b2e9-4092e0db9ad5")]
 
 // Version information for an assembly consists of the following four values:
 //

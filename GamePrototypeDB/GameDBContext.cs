@@ -11,7 +11,7 @@ using GamePrototypeClasses.user;
 
 namespace GamePrototypeDB
 {
-    class GameDBContext : DbContext 
+    public class GameDBContext : DbContext 
     {
         public GameDBContext() : base("DBConnection")
         {

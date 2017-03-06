@@ -1,6 +1,6 @@
 ﻿namespace GamePrototypeClasses.enums
 {
-    public enum ThinksTypeEnum
+    public enum ThingsTypeEnum
     {
         Hemlet,
         Armor,
