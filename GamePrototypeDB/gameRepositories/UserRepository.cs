@@ -8,7 +8,7 @@ using GamePrototypeClasses.user;
 
 namespace GamePrototypeDB.gameRepositories
 {
-    class UserRepository : BaseRepository<UserProfile>
+    public class UserRepository : BaseRepository<UserProfile>
     {
         public override IQueryable<UserProfile> GetAll()
         {

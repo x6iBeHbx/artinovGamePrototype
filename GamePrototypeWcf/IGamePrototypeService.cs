@@ -16,16 +16,16 @@ namespace GamePrototypeWcf
     [ServiceContract]
     public interface IGamePrototypeService
     {
-
+        //--------GET----------
         //User 
         [OperationContract]
         List<UserProfile> GetAllUsers();
-        [OperationContract]
-        UserProfile GetUserByLogin(string login);
-        [OperationContract]
-        UserProfile GetUserByEMail(string email);
-        [OperationContract]
-        UserProfile GetUSerByPhone(string phone);
+        //[OperationContract]
+        //UserProfile GetUserByLogin(string login);
+        //[OperationContract]
+        //UserProfile GetUserByEMail(string email);
+        //[OperationContract]
+        //UserProfile GetUSerByPhone(string phone);
         [OperationContract]
         UserProfile GetUserByCharactrId(Guid id);
         [OperationContract]
@@ -46,10 +46,10 @@ namespace GamePrototypeWcf
         Character GetCharacterByUser(UserProfile user);
         [OperationContract]
         Character GetCharacterByNickName(string nickName);
-        [OperationContract]
-        Character GetCharacterByWarehouse(CharacterWarehouse warehouse);
-        [OperationContract]
-        Character GetCharacterByQuipment(CharacterEquipment eqiupment);
+        //[OperationContract]
+        //Character GetCharacterByWarehouse(CharacterWarehouse warehouse);
+        //[OperationContract]
+        //Character GetCharacterByQuipment(CharacterEquipment eqiupment);
 
         //warehose
         [OperationContract]
@@ -62,7 +62,7 @@ namespace GamePrototypeWcf
         List<CharacterWarehouse> GetAllCharacterWarehousesByPotion(Potions potion);
         [OperationContract]
         CharacterWarehouse GetWarehouseById(Guid id);
-        CharacterWarehouse GetWarehouseByUser(UserProfile user);
+        //CharacterWarehouse GetWarehouseByUser(UserProfile user);
         
         //character things, scrolls, potions
         [OperationContract]
@@ -112,5 +112,13 @@ namespace GamePrototypeWcf
         [OperationContract]
         List<SpecialThingBonus> GetAllSpecialThingBonuses();
         //TODO: need continue create this class
+
+        //--------SET----------
+
+        //user profile
+        void SetUserProfile(UserProfile userProfile);
+        void UpdateUserProfile(UserProfile userProfile);
+        //character
+        void SetCharacter(Character character);
     }
 }
