@@ -35,12 +35,15 @@
             this.CharacterStrength = new System.Windows.Forms.Label();
             this.CharacterAgility = new System.Windows.Forms.Label();
             this.CharacterIntellgence = new System.Windows.Forms.Label();
+            this.StoreBtn = new System.Windows.Forms.Button();
+            this.CharacterCoins = new System.Windows.Forms.Label();
+            this.CharacterLevel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // CharacterImageBox
             // 
-            this.CharacterImageBox.Location = new System.Drawing.Point(19, 15);
+            this.CharacterImageBox.Location = new System.Drawing.Point(19, 21);
             this.CharacterImageBox.Name = "CharacterImageBox";
             this.CharacterImageBox.Size = new System.Drawing.Size(109, 172);
             this.CharacterImageBox.TabIndex = 0;
@@ -48,7 +51,7 @@
             // 
             // CharacterInfoBtn
             // 
-            this.CharacterInfoBtn.Location = new System.Drawing.Point(19, 193);
+            this.CharacterInfoBtn.Location = new System.Drawing.Point(19, 199);
             this.CharacterInfoBtn.Name = "CharacterInfoBtn";
             this.CharacterInfoBtn.Size = new System.Drawing.Size(25, 24);
             this.CharacterInfoBtn.TabIndex = 1;
@@ -58,7 +61,7 @@
             // CharacterHealth
             // 
             this.CharacterHealth.AutoSize = true;
-            this.CharacterHealth.Location = new System.Drawing.Point(70, 193);
+            this.CharacterHealth.Location = new System.Drawing.Point(70, 199);
             this.CharacterHealth.Name = "CharacterHealth";
             this.CharacterHealth.Size = new System.Drawing.Size(41, 13);
             this.CharacterHealth.TabIndex = 7;
@@ -67,7 +70,7 @@
             // CharacterMana
             // 
             this.CharacterMana.AutoSize = true;
-            this.CharacterMana.Location = new System.Drawing.Point(71, 217);
+            this.CharacterMana.Location = new System.Drawing.Point(71, 223);
             this.CharacterMana.Name = "CharacterMana";
             this.CharacterMana.Size = new System.Drawing.Size(37, 13);
             this.CharacterMana.TabIndex = 8;
@@ -76,7 +79,7 @@
             // CharacterStrength
             // 
             this.CharacterStrength.AutoSize = true;
-            this.CharacterStrength.Location = new System.Drawing.Point(134, 15);
+            this.CharacterStrength.Location = new System.Drawing.Point(134, 21);
             this.CharacterStrength.Name = "CharacterStrength";
             this.CharacterStrength.Size = new System.Drawing.Size(53, 13);
             this.CharacterStrength.TabIndex = 9;
@@ -85,7 +88,7 @@
             // CharacterAgility
             // 
             this.CharacterAgility.AutoSize = true;
-            this.CharacterAgility.Location = new System.Drawing.Point(134, 39);
+            this.CharacterAgility.Location = new System.Drawing.Point(134, 45);
             this.CharacterAgility.Name = "CharacterAgility";
             this.CharacterAgility.Size = new System.Drawing.Size(37, 13);
             this.CharacterAgility.TabIndex = 10;
@@ -94,16 +97,46 @@
             // CharacterIntellgence
             // 
             this.CharacterIntellgence.AutoSize = true;
-            this.CharacterIntellgence.Location = new System.Drawing.Point(134, 66);
+            this.CharacterIntellgence.Location = new System.Drawing.Point(134, 72);
             this.CharacterIntellgence.Name = "CharacterIntellgence";
             this.CharacterIntellgence.Size = new System.Drawing.Size(64, 13);
             this.CharacterIntellgence.TabIndex = 11;
             this.CharacterIntellgence.Text = "Intelligence:";
             // 
+            // StoreBtn
+            // 
+            this.StoreBtn.Location = new System.Drawing.Point(612, 15);
+            this.StoreBtn.Name = "StoreBtn";
+            this.StoreBtn.Size = new System.Drawing.Size(75, 23);
+            this.StoreBtn.TabIndex = 12;
+            this.StoreBtn.Text = "Store";
+            this.StoreBtn.UseVisualStyleBackColor = true;
+            // 
+            // CharacterCoins
+            // 
+            this.CharacterCoins.AutoSize = true;
+            this.CharacterCoins.Location = new System.Drawing.Point(3, 0);
+            this.CharacterCoins.Name = "CharacterCoins";
+            this.CharacterCoins.Size = new System.Drawing.Size(36, 13);
+            this.CharacterCoins.TabIndex = 13;
+            this.CharacterCoins.Text = "Coins:";
+            // 
+            // CharacterLevel
+            // 
+            this.CharacterLevel.AutoSize = true;
+            this.CharacterLevel.Location = new System.Drawing.Point(124, 2);
+            this.CharacterLevel.Name = "CharacterLevel";
+            this.CharacterLevel.Size = new System.Drawing.Size(36, 13);
+            this.CharacterLevel.TabIndex = 14;
+            this.CharacterLevel.Text = "Level:";
+            // 
             // MainGameScene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CharacterLevel);
+            this.Controls.Add(this.CharacterCoins);
+            this.Controls.Add(this.StoreBtn);
             this.Controls.Add(this.CharacterIntellgence);
             this.Controls.Add(this.CharacterAgility);
             this.Controls.Add(this.CharacterStrength);
@@ -129,5 +162,8 @@
         private System.Windows.Forms.Label CharacterStrength;
         private System.Windows.Forms.Label CharacterAgility;
         private System.Windows.Forms.Label CharacterIntellgence;
+        private System.Windows.Forms.Button StoreBtn;
+        private System.Windows.Forms.Label CharacterCoins;
+        private System.Windows.Forms.Label CharacterLevel;
     }
 }
