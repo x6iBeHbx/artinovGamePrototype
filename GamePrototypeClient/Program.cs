@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GamePrototypeClasses.enums;
+using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.character.warehouse;
+using GamePrototypeClasses.user;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient
@@ -12,18 +16,20 @@ namespace GamePrototypeClient
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
+        //[STAThread]
         static void Main()
         {
             //Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new GameForm());
 
+            var clientService = new GamePrototypeServiceClient();
+
             CharacterWarehouse warehouse = new CharacterWarehouse {Value = 0};
 
             Character testCharacter = new Character()
             {
-                Name = "Bob",
+                Name = "Rop",
                 Agility = 1,
                 Attack = 1,
                 Defense = 1,
@@ -39,6 +45,8 @@ namespace GamePrototypeClient
                 ImageUrl = "asdsad"
             };
 
+            clientService.SetCharacter(testCharacter);
+
             var testUser = new UserProfile()
             {
                 UserCharacter = testCharacter,
@@ -46,13 +54,11 @@ namespace GamePrototypeClient
                 Name = "Tomi",
                 Age = 18,
                 EMail = "asd@a.ru",
-                LastName = "Linkoln",
-                Login = "qwerty",
+                LastName = "Lol",
+                Login = "qqq",
                 Password = "qwerty",
                 PhoneNumber = "555-555-555"
             };
-
-            var clientService = new GamePrototypeServiceClient();
 
             clientService.SetUserProfile(testUser);
         }

@@ -4,8 +4,10 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using GamePrototypeClasses.game.character;
 using GamePrototypeClasses.user;
 using GamePrototypeLogic;
+using GamePrototypeLogic.gameSeverLogic;
 
 namespace GamePrototypeWcf
 {
@@ -14,9 +16,15 @@ namespace GamePrototypeWcf
     public class GamePrototypeService : IGamePrototypeService
     {
         private readonly ServerLogicManager _serverLogicManager = new ServerLogicManager();
+
         public void SetUserProfile(UserProfile user)
         {
             _serverLogicManager.UserProfileServerLogic.AddEntity(user);
+        }
+
+        public void SetCharacter(Character character)
+        {
+            _serverLogicManager.CharacterBaseBusinessLogic.AddEntity(character);
         }
     }
 }

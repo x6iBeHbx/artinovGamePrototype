@@ -15,7 +15,9 @@ namespace GamePrototypeDB
     {
         public GameDBContext() : base("DBConnection")
         {
-            
+
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<UserProfile> UserProfile { get; set; }

@@ -118,8 +118,11 @@ namespace GamePrototypeWcf
         ////user profile
         [OperationContract]
         void SetUserProfile(UserProfile userProfile);
+
+
         //void UpdateUserProfile(UserProfile userProfile);
         ////character
-        //void SetCharacter(Character character);
+        [OperationContract]
+        void SetCharacter(Character character);
     }
 }

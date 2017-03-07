@@ -106,7 +106,7 @@ namespace GamePrototypeDB.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false),
-                        ThinksType = c.Int(nullable: false),
+                        ThingsType = c.Int(nullable: false),
                         Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
@@ -142,7 +142,7 @@ namespace GamePrototypeDB.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false),
-                        ThinksType = c.Int(nullable: false),
+                        ThingsType = c.Int(nullable: false),
                         Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
@@ -166,7 +166,7 @@ namespace GamePrototypeDB.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false),
-                        ThinksType = c.Int(nullable: false),
+                        ThingsType = c.Int(nullable: false),
                         Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
@@ -244,13 +244,13 @@ namespace GamePrototypeDB.Migrations
                 c => new
                     {
                         Id = c.Guid(nullable: false),
-                        LastName = c.String(),
-                        EMail = c.String(),
+                        LastName = c.String(nullable: false),
+                        EMail = c.String(nullable: false),
                         Age = c.Int(nullable: false),
                         PhoneNumber = c.String(),
                         UserSex = c.Int(nullable: false),
-                        Login = c.String(),
-                        Password = c.String(),
+                        Login = c.String(nullable: false),
+                        Password = c.String(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
                         UserCharacter_Id = c.Guid(),
                     })

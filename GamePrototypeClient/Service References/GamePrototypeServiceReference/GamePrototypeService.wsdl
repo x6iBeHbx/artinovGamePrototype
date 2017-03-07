@@ -18,16 +18,35 @@
   <wsdl:message name="IGamePrototypeService_SetUserProfile_OutputMessage">
     <wsdl:part name="parameters" element="tns:SetUserProfileResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_SetCharacter_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetCharacter" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_SetCharacter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetCharacterResponse" />
+  </wsdl:message>
   <wsdl:portType name="IGamePrototypeService">
     <wsdl:operation name="SetUserProfile">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfile" message="tns:IGamePrototypeService_SetUserProfile_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse" message="tns:IGamePrototypeService_SetUserProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetCharacter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacter" message="tns:IGamePrototypeService_SetCharacter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacterResponse" message="tns:IGamePrototypeService_SetCharacter_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGamePrototypeService" type="tns:IGamePrototypeService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="SetUserProfile">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetUserProfile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetCharacter">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetCharacter" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
