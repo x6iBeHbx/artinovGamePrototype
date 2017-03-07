@@ -25,7 +25,7 @@ namespace GamePrototypeClient
 
             CharacterWarehouse warehouse = new CharacterWarehouse {Value = 0};
 
-            Character testCharacter = new Character
+            Character testCharacter = new Character()
             {
                 Name = "Bob",
                 Agility = 1,
