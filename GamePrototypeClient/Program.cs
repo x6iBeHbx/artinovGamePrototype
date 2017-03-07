@@ -4,10 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GamePrototypeClient.GamePrototypeServiceReference;
-using Character = GamePrototypeClasses.game.character.Character;
-using CharacterEquipment = GamePrototypeClasses.game.character.CharacterEquipment;
-using CharacterTypeEnum = GamePrototypeClasses.enums.CharacterTypeEnum;
-using CharacterWarehouse = GamePrototypeClasses.game.character.warehouse.CharacterWarehouse;
 
 namespace GamePrototypeClient
 {
