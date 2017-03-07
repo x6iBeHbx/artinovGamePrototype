@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" />
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" />
+  <xs:complexType name="Things">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q1:ThingEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Things" nillable="true" type="tns:Things" />
+  <xs:complexType name="SpecialThingBonus">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q2:ValueEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" minOccurs="0" name="SpecialThingBonusTimeEnum" type="q3:SpecialThingBonusTimeEnum" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" minOccurs="0" name="SpecialThinkBonusType" type="q4:SpecialThinkBonusEnum" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SpecialThingBonus" nillable="true" type="tns:SpecialThingBonus" />
+  <xs:complexType name="Potions">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q5:ThingEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Potions" nillable="true" type="tns:Potions" />
+  <xs:complexType name="Scrolls">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q6:ThingEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Scrolls" nillable="true" type="tns:Scrolls" />
+</xs:schema>

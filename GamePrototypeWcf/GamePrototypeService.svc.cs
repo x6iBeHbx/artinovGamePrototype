@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using GamePrototypeClasses.user;
+using GamePrototypeLogic;
 
 namespace GamePrototypeWcf
 {
@@ -11,8 +13,10 @@ namespace GamePrototypeWcf
     // NOTE: In order to launch WCF Test Client for testing this service, please select GamePrototypeService.svc or GamePrototypeService.svc.cs at the Solution Explorer and start debugging.
     public class GamePrototypeService : IGamePrototypeService
     {
-        public void DoWork()
+        private readonly ServerLogicManager _serverLogicManager = new ServerLogicManager();
+        public void SetUserProfile(UserProfile user)
         {
+            _serverLogicManager.UserProfileServerLogic.AddEntity(user);
         }
     }
 }

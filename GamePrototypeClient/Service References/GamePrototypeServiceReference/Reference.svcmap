@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="17df15f7-7225-4ec5-8ab7-d3287029ef01" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52565/GamePrototypeService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GamePrototypeService.xsd" MetadataType="Schema" ID="abb6f291-c4f6-4426-ab61-667209c69689" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GamePrototypeService1.xsd" MetadataType="Schema" ID="9bbc153f-da68-45aa-8fd9-d5a97b888e36" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd5" />
+    <MetadataFile FileName="GamePrototypeService2.xsd" MetadataType="Schema" ID="b38d2435-fd17-4ae0-bdde-a471425170c3" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd7" />
+    <MetadataFile FileName="GamePrototypeService.disco" MetadataType="Disco" ID="90fda38e-2aad-4209-879c-acdf370e4947" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?disco" />
+    <MetadataFile FileName="GamePrototypeService3.xsd" MetadataType="Schema" ID="17adafcc-24a6-4fa9-955d-6ca35b9d966f" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd3" />
+    <MetadataFile FileName="GamePrototypeService4.xsd" MetadataType="Schema" ID="fd75a730-7c2b-4c5f-905a-c2ffc826c836" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GamePrototypeService.wsdl" MetadataType="Wsdl" ID="e5b5e027-cf95-44d1-9636-147547a6489a" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?wsdl" />
+    <MetadataFile FileName="GamePrototypeService5.xsd" MetadataType="Schema" ID="94c33902-c87d-4819-b8d7-8270ee59a171" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd6" />
+    <MetadataFile FileName="GamePrototypeService6.xsd" MetadataType="Schema" ID="1570b09b-2754-4eed-adde-888f5340c26e" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd2" />
+    <MetadataFile FileName="GamePrototypeService7.xsd" MetadataType="Schema" ID="0687cc55-411d-44c6-8337-8f0c33dfd487" SourceId="1" SourceUrl="http://localhost:52565/GamePrototypeService.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

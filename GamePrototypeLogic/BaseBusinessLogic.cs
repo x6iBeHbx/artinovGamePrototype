@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GamePrototypeClasses.core;
+using GamePrototypeClasses.user;
 using GamePrototypeDB;
 
 namespace GamePrototypeLogic
@@ -14,6 +15,10 @@ namespace GamePrototypeLogic
         public BaseBusinessLogic()
         {
             Repository = new BaseRepository<T>();
+        }
+        public void AddEntity(T entity)
+        {
+            Repository.Add(entity);
         }
     }
 }

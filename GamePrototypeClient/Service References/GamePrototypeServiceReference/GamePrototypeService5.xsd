@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="SpecialThingBonusTimeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Forever" />
+      <xs:enumeration value="OneMove" />
+      <xs:enumeration value="TwoMove" />
+      <xs:enumeration value="ThreeMove" />
+      <xs:enumeration value="OneFight" />
+      <xs:enumeration value="Time" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SpecialThingBonusTimeEnum" nillable="true" type="tns:SpecialThingBonusTimeEnum" />
+  <xs:simpleType name="SpecialThinkBonusEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="HealthValue" />
+      <xs:enumeration value="HealthPercent" />
+      <xs:enumeration value="ArmorValue" />
+      <xs:enumeration value="ArmorPercent" />
+      <xs:enumeration value="AgilityValue" />
+      <xs:enumeration value="AgilityPercent" />
+      <xs:enumeration value="IntelegenseValue" />
+      <xs:enumeration value="IntelegensePercent" />
+      <xs:enumeration value="ManaValue" />
+      <xs:enumeration value="ManaPercent" />
+      <xs:enumeration value="Freez" />
+      <xs:enumeration value="Fogot" />
+      <xs:enumeration value="Bleeding" />
+      <xs:enumeration value="Poisoning" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SpecialThinkBonusEnum" nillable="true" type="tns:SpecialThinkBonusEnum" />
+  <xs:simpleType name="ThingsTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hemlet" />
+      <xs:enumeration value="Armor" />
+      <xs:enumeration value="Boots" />
+      <xs:enumeration value="Gloves" />
+      <xs:enumeration value="Cloak" />
+      <xs:enumeration value="Necklace" />
+      <xs:enumeration value="Earrings" />
+      <xs:enumeration value="Rings" />
+      <xs:enumeration value="Weapon" />
+      <xs:enumeration value="Scroll" />
+      <xs:enumeration value="Potion" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ThingsTypeEnum" nillable="true" type="tns:ThingsTypeEnum" />
+  <xs:simpleType name="CharacterTypeEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Warrior" />
+      <xs:enumeration value="Assassin" />
+      <xs:enumeration value="Wizard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CharacterTypeEnum" nillable="true" type="tns:CharacterTypeEnum" />
+  <xs:simpleType name="UserSexEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Male" />
+      <xs:enumeration value="Female" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UserSexEnum" nillable="true" type="tns:UserSexEnum" />
+</xs:schema>

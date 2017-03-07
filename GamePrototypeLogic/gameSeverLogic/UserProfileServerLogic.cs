@@ -8,7 +8,7 @@ using GamePrototypeDB.gameRepositories;
 
 namespace GamePrototypeLogic.gameSeverLogic
 {
-    class UserProfileServerLogic : BaseBusinessLogic<UserProfile>
+    public class UserProfileServerLogic : BaseBusinessLogic<UserProfile>
     {
         private readonly UserRepository _userRepository = new UserRepository();
 

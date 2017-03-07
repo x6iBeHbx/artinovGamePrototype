@@ -87,8 +87,13 @@
     </Compile>
     <Compile Include="IGamePrototypeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerLogicManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GamePrototypeLogic\GamePrototypeLogic.csproj">
+      <Project>{e9f1eda0-b10e-4768-b2e9-4092e0db9ad5}</Project>
+      <Name>GamePrototypeLogic</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GamePrototype\GamePrototypeClasses.csproj">
       <Project>{4435e788-e418-42ad-ab03-3a1204b86f0f}</Project>
       <Name>GamePrototypeClasses</Name>
