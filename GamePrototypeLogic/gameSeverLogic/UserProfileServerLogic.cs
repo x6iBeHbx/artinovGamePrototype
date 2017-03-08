@@ -16,5 +16,12 @@ namespace GamePrototypeLogic.gameSeverLogic
         {
             return _userRepository.GetAll();
         }
+
+        public UserProfile GetUserByLogin(string login)
+        {
+            return GetAllUsers().FirstOrDefault(x => x.Login.Equals(login));
+        }
+
+
     }
 }

@@ -13,8 +13,7 @@ namespace GamePrototypeDB.gameRepositories
         public override IQueryable<UserProfile> GetAll()
         {
             return Context.UserProfile
-                .Include(x => x.UserCharacter)
-                .Include(x => x.UserSex);
+                .Include(x => x.UserCharacter);
         }
     }
 }

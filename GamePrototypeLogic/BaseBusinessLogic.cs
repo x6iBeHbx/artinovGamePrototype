@@ -20,5 +20,21 @@ namespace GamePrototypeLogic
         {
             Repository.Add(entity);
         }
+
+        public void UpdateEntity(T entity)
+        {
+            Repository.Update(entity);
+        }
+
+        public IQueryable<T> GetAllEntity()
+        {
+            return Repository.GetAll();
+        }
+
+        public T GetEntityById(Guid id)
+        {
+            return Repository.GetById(id);
+        }
+
     }
 }
