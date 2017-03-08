@@ -16,14 +16,14 @@ namespace GamePrototypeWcf
     [ServiceContract]
     public interface IGamePrototypeService
     {
-        //--------GET----------
+        #region Get
         //User 
         //[OperationContract]
         //List<UserProfile> GetAllUsers();
-        //[OperationContract]
-        //UserProfile GetUserByLogin(string login);
-        //[OperationContract]
-        //UserProfile GetUserByEMail(string email);
+        [OperationContract]
+        UserProfile GetUserByLogin(string login);
+        [OperationContract]
+        UserProfile GetUserByEmail(string email);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]
@@ -113,7 +113,9 @@ namespace GamePrototypeWcf
         //List<SpecialThingBonus> GetAllSpecialThingBonuses();
         ////TODO: need continue create this class
 
-        ////--------SET----------
+        #endregion
+
+        #region Set
 
         ////user profile
         [OperationContract]
@@ -124,5 +126,7 @@ namespace GamePrototypeWcf
         ////character
         [OperationContract]
         void SetCharacter(Character character);
+
+    #endregion
     }
 }

@@ -28,20 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.MainSceneListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // MainSceneListBox
+            // 
+            this.MainSceneListBox.FormattingEnabled = true;
+            this.MainSceneListBox.Location = new System.Drawing.Point(-5, -13);
+            this.MainSceneListBox.Name = "MainSceneListBox";
+            this.MainSceneListBox.Size = new System.Drawing.Size(716, 342);
+            this.MainSceneListBox.TabIndex = 0;
             // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 322);
+            this.Controls.Add(this.MainSceneListBox);
             this.Name = "GameForm";
             this.Text = "Game";
+            this.Load += new System.EventHandler(this.GameForm_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox MainSceneListBox;
     }
 }
 

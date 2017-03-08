@@ -22,6 +22,9 @@ namespace GamePrototypeLogic.gameSeverLogic
             return GetAllUsers().FirstOrDefault(x => x.Login.Equals(login));
         }
 
-
+        public UserProfile GetUserByEmail(string email)
+        {
+            return GetAllUsers().FirstOrDefault(x => x.EMail.Equals(email));
+        }
     }
 }

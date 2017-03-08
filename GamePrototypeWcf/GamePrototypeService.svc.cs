@@ -17,6 +17,7 @@ namespace GamePrototypeWcf
     {
         private readonly ServerLogicManager _serverLogicManager = new ServerLogicManager();
 
+        #region Setters
         public void SetUserProfile(UserProfile user)
         {
             _serverLogicManager.UserProfileServerLogic.AddEntity(user);
@@ -26,5 +27,22 @@ namespace GamePrototypeWcf
         {
             _serverLogicManager.CharacterBaseBusinessLogic.AddEntity(character);
         }
+
+        #endregion
+
+        #region Getters
+
+        public UserProfile GetUserByLogin(string login)
+        {
+            return _serverLogicManager.UserProfileServerLogic.GetUserByLogin(login);
+        }
+
+        public UserProfile GetUserByEmail(string email)
+        {
+            return _serverLogicManager.UserProfileServerLogic.GetUserByEmail(email);
+        }
+
+
+        #endregion 
     }
 }

@@ -36,5 +36,14 @@ namespace GamePrototypeLogic
             return Repository.GetById(id);
         }
 
+        public void RemoveEntity(T entity)
+        {
+            Repository.Remove(entity);
+        }
+
+        public void RemoveEntityAt(Guid id)
+        {
+            Repository.RemoveAt(id);
+        }
     }
 }

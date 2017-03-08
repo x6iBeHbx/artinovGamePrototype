@@ -44,6 +44,7 @@
             this.LoginBtn.TabIndex = 0;
             this.LoginBtn.Text = "Start";
             this.LoginBtn.UseVisualStyleBackColor = true;
+            this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
             // LoginLable
             // 
@@ -77,7 +78,7 @@
             // 
             // ToRegisterBtn
             // 
-            this.ToRegisterBtn.Location = new System.Drawing.Point(322, 315);
+            this.ToRegisterBtn.Location = new System.Drawing.Point(322, 228);
             this.ToRegisterBtn.Name = "ToRegisterBtn";
             this.ToRegisterBtn.Size = new System.Drawing.Size(75, 23);
             this.ToRegisterBtn.TabIndex = 4;
