@@ -15,6 +15,24 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="GamePrototypeServiceReference.IGamePrototypeService")]
     public interface IGamePrototypeService {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetUserByLogin", ReplyAction="http://tempuri.org/IGamePrototypeService/GetUserByLoginResponse")]
+        GamePrototypeClasses.user.UserProfile GetUserByLogin(string login);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetUserByLogin", ReplyAction="http://tempuri.org/IGamePrototypeService/GetUserByLoginResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.user.UserProfile> GetUserByLoginAsync(string login);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetUserByEmail", ReplyAction="http://tempuri.org/IGamePrototypeService/GetUserByEmailResponse")]
+        GamePrototypeClasses.user.UserProfile GetUserByEmail(string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetUserByEmail", ReplyAction="http://tempuri.org/IGamePrototypeService/GetUserByEmailResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.user.UserProfile> GetUserByEmailAsync(string email);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid", ReplyAction="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValidResponse")]
+        bool IsUserLoginDataValid(string login, string pass);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid", ReplyAction="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValidResponse")]
+        System.Threading.Tasks.Task<bool> IsUserLoginDataValidAsync(string login, string pass);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetUserProfile", ReplyAction="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse")]
         void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile);
         
@@ -53,6 +71,30 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public GamePrototypeServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public GamePrototypeClasses.user.UserProfile GetUserByLogin(string login) {
+            return base.Channel.GetUserByLogin(login);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.user.UserProfile> GetUserByLoginAsync(string login) {
+            return base.Channel.GetUserByLoginAsync(login);
+        }
+        
+        public GamePrototypeClasses.user.UserProfile GetUserByEmail(string email) {
+            return base.Channel.GetUserByEmail(email);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.user.UserProfile> GetUserByEmailAsync(string email) {
+            return base.Channel.GetUserByEmailAsync(email);
+        }
+        
+        public bool IsUserLoginDataValid(string login, string pass) {
+            return base.Channel.IsUserLoginDataValid(login, pass);
+        }
+        
+        public System.Threading.Tasks.Task<bool> IsUserLoginDataValidAsync(string login, string pass) {
+            return base.Channel.IsUserLoginDataValidAsync(login, pass);
         }
         
         public void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile) {

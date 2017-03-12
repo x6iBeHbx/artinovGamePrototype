@@ -13,6 +13,7 @@ namespace GamePrototypeClient
 {
     public partial class GameForm : Form
     {
+
         public GameForm()
         {
             InitializeComponent();
@@ -20,13 +21,21 @@ namespace GamePrototypeClient
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            var loginForm = new Login();
-            //loginForm.Width = this.MainSceneListBox.Width;
-            //loginForm.Height = this.MainSceneListBox.Height;
-            loginForm.AutoScroll = true;
-            this.MainSceneListBox.Controls.Add(loginForm);
+            var loginForm = new Login(OnMyEvent) {AutoScroll = true};
+            AddUserControl(loginForm);
             loginForm.Show();
-            
+        }
+
+        private void OnMyEvent()
+        {
+            var mainGameScene = new MainGameScene() { AutoScroll = true };
+            AddUserControl(mainGameScene);
+            mainGameScene.Show();
+        }
+
+        private void AddUserControl(UserControl control)
+        {
+            this.MainSceneListBox.Controls.Add(control);
         }
     }
 }

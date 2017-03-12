@@ -61,6 +61,8 @@ namespace GamePrototypeClient
             //};
 
             //clientService.SetUserProfile(testUser);
+
+            //var testUser = clientService.GetUserByLogin("qqq");
         }
     }
 }

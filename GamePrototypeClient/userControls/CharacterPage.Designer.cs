@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharacterPage));
             this.WarehouseList = new System.Windows.Forms.ListView();
             this.ItemId = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ThingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -89,9 +90,9 @@
             this.ItemId,
             this.ThingName,
             this.ThingPrice});
-            this.WarehouseList.Location = new System.Drawing.Point(401, 4);
+            this.WarehouseList.Location = new System.Drawing.Point(341, 35);
             this.WarehouseList.Name = "WarehouseList";
-            this.WarehouseList.Size = new System.Drawing.Size(316, 287);
+            this.WarehouseList.Size = new System.Drawing.Size(361, 287);
             this.WarehouseList.TabIndex = 0;
             this.WarehouseList.UseCompatibleStateImageBehavior = false;
             this.WarehouseList.View = System.Windows.Forms.View.List;
@@ -110,63 +111,78 @@
             // 
             // CharaterImg
             // 
-            this.CharaterImg.Location = new System.Drawing.Point(124, 57);
+            this.CharaterImg.Image = ((System.Drawing.Image)(resources.GetObject("CharaterImg.Image")));
+            this.CharaterImg.Location = new System.Drawing.Point(140, 82);
             this.CharaterImg.Name = "CharaterImg";
-            this.CharaterImg.Size = new System.Drawing.Size(108, 156);
+            this.CharaterImg.Size = new System.Drawing.Size(108, 181);
+            this.CharaterImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharaterImg.TabIndex = 1;
             this.CharaterImg.TabStop = false;
             // 
             // CharacterHemletImg
             // 
-            this.CharacterHemletImg.Location = new System.Drawing.Point(157, 15);
+            this.CharacterHemletImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterHemletImg.Image")));
+            this.CharacterHemletImg.Location = new System.Drawing.Point(164, 40);
             this.CharacterHemletImg.Name = "CharacterHemletImg";
             this.CharacterHemletImg.Size = new System.Drawing.Size(39, 36);
+            this.CharacterHemletImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterHemletImg.TabIndex = 2;
             this.CharacterHemletImg.TabStop = false;
             // 
             // CharacterNeackleImg
             // 
-            this.CharacterNeackleImg.Location = new System.Drawing.Point(99, 21);
+            this.CharacterNeackleImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterNeackleImg.Image")));
+            this.CharacterNeackleImg.Location = new System.Drawing.Point(267, 53);
             this.CharacterNeackleImg.Name = "CharacterNeackleImg";
-            this.CharacterNeackleImg.Size = new System.Drawing.Size(42, 30);
+            this.CharacterNeackleImg.Size = new System.Drawing.Size(68, 22);
+            this.CharacterNeackleImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterNeackleImg.TabIndex = 3;
             this.CharacterNeackleImg.TabStop = false;
             // 
             // CharacterCloackImg
             // 
-            this.CharacterCloackImg.Location = new System.Drawing.Point(3, 57);
+            this.CharacterCloackImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterCloackImg.Image")));
+            this.CharacterCloackImg.Location = new System.Drawing.Point(19, 82);
             this.CharacterCloackImg.Name = "CharacterCloackImg";
             this.CharacterCloackImg.Size = new System.Drawing.Size(49, 79);
+            this.CharacterCloackImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterCloackImg.TabIndex = 4;
             this.CharacterCloackImg.TabStop = false;
             // 
             // CharacterArmorImg
             // 
-            this.CharacterArmorImg.Location = new System.Drawing.Point(58, 57);
+            this.CharacterArmorImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterArmorImg.Image")));
+            this.CharacterArmorImg.Location = new System.Drawing.Point(74, 82);
             this.CharacterArmorImg.Name = "CharacterArmorImg";
             this.CharacterArmorImg.Size = new System.Drawing.Size(60, 79);
+            this.CharacterArmorImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterArmorImg.TabIndex = 5;
             this.CharacterArmorImg.TabStop = false;
             // 
             // CharacterWeapon2
             // 
-            this.CharacterWeapon2.Location = new System.Drawing.Point(58, 142);
+            this.CharacterWeapon2.Image = ((System.Drawing.Image)(resources.GetObject("CharacterWeapon2.Image")));
+            this.CharacterWeapon2.Location = new System.Drawing.Point(67, 167);
             this.CharacterWeapon2.Name = "CharacterWeapon2";
-            this.CharacterWeapon2.Size = new System.Drawing.Size(60, 71);
+            this.CharacterWeapon2.Size = new System.Drawing.Size(65, 70);
+            this.CharacterWeapon2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterWeapon2.TabIndex = 6;
             this.CharacterWeapon2.TabStop = false;
             // 
             // CharacterWeapon1
             // 
-            this.CharacterWeapon1.Location = new System.Drawing.Point(238, 57);
+            this.CharacterWeapon1.Image = ((System.Drawing.Image)(resources.GetObject("CharacterWeapon1.Image")));
+            this.CharacterWeapon1.Location = new System.Drawing.Point(254, 82);
             this.CharacterWeapon1.Name = "CharacterWeapon1";
-            this.CharacterWeapon1.Size = new System.Drawing.Size(60, 71);
+            this.CharacterWeapon1.Size = new System.Drawing.Size(65, 70);
+            this.CharacterWeapon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterWeapon1.TabIndex = 7;
             this.CharacterWeapon1.TabStop = false;
             // 
             // CharacterBootsImg
             // 
-            this.CharacterBootsImg.Location = new System.Drawing.Point(139, 219);
+            this.CharacterBootsImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterBootsImg.Image")));
+            this.CharacterBootsImg.Location = new System.Drawing.Point(155, 269);
             this.CharacterBootsImg.Name = "CharacterBootsImg";
             this.CharacterBootsImg.Size = new System.Drawing.Size(57, 36);
             this.CharacterBootsImg.TabIndex = 8;
@@ -174,7 +190,8 @@
             // 
             // CharacterGlovesImg
             // 
-            this.CharacterGlovesImg.Location = new System.Drawing.Point(238, 134);
+            this.CharacterGlovesImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterGlovesImg.Image")));
+            this.CharacterGlovesImg.Location = new System.Drawing.Point(254, 159);
             this.CharacterGlovesImg.Name = "CharacterGlovesImg";
             this.CharacterGlovesImg.Size = new System.Drawing.Size(52, 36);
             this.CharacterGlovesImg.TabIndex = 9;
@@ -182,104 +199,128 @@
             // 
             // CharacterEarningImg
             // 
-            this.CharacterEarningImg.Location = new System.Drawing.Point(211, 21);
+            this.CharacterEarningImg.Image = ((System.Drawing.Image)(resources.GetObject("CharacterEarningImg.Image")));
+            this.CharacterEarningImg.Location = new System.Drawing.Point(209, 53);
             this.CharacterEarningImg.Name = "CharacterEarningImg";
-            this.CharacterEarningImg.Size = new System.Drawing.Size(42, 30);
+            this.CharacterEarningImg.Size = new System.Drawing.Size(52, 22);
+            this.CharacterEarningImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterEarningImg.TabIndex = 10;
             this.CharacterEarningImg.TabStop = false;
             // 
             // CharacterRing1Img
             // 
-            this.CharacterRing1Img.Location = new System.Drawing.Point(238, 176);
+            this.CharacterRing1Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterRing1Img.Image")));
+            this.CharacterRing1Img.Location = new System.Drawing.Point(254, 201);
             this.CharacterRing1Img.Name = "CharacterRing1Img";
-            this.CharacterRing1Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterRing1Img.Size = new System.Drawing.Size(20, 20);
+            this.CharacterRing1Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterRing1Img.TabIndex = 11;
             this.CharacterRing1Img.TabStop = false;
             // 
             // CharacterRing2Img
             // 
-            this.CharacterRing2Img.Location = new System.Drawing.Point(273, 176);
+            this.CharacterRing2Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterRing2Img.Image")));
+            this.CharacterRing2Img.Location = new System.Drawing.Point(278, 201);
             this.CharacterRing2Img.Name = "CharacterRing2Img";
-            this.CharacterRing2Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterRing2Img.Size = new System.Drawing.Size(20, 20);
+            this.CharacterRing2Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterRing2Img.TabIndex = 12;
             this.CharacterRing2Img.TabStop = false;
             // 
             // CharacterRing3Img
             // 
-            this.CharacterRing3Img.Location = new System.Drawing.Point(308, 176);
+            this.CharacterRing3Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterRing3Img.Image")));
+            this.CharacterRing3Img.Location = new System.Drawing.Point(302, 201);
             this.CharacterRing3Img.Name = "CharacterRing3Img";
-            this.CharacterRing3Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterRing3Img.Size = new System.Drawing.Size(20, 20);
+            this.CharacterRing3Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterRing3Img.TabIndex = 13;
             this.CharacterRing3Img.TabStop = false;
             // 
             // CharacterScroll1Img
             // 
-            this.CharacterScroll1Img.Location = new System.Drawing.Point(3, 219);
+            this.CharacterScroll1Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterScroll1Img.Image")));
+            this.CharacterScroll1Img.Location = new System.Drawing.Point(19, 269);
             this.CharacterScroll1Img.Name = "CharacterScroll1Img";
             this.CharacterScroll1Img.Size = new System.Drawing.Size(37, 36);
+            this.CharacterScroll1Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterScroll1Img.TabIndex = 14;
             this.CharacterScroll1Img.TabStop = false;
             // 
             // CharacterScroll2Img
             // 
-            this.CharacterScroll2Img.Location = new System.Drawing.Point(46, 219);
+            this.CharacterScroll2Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterScroll2Img.Image")));
+            this.CharacterScroll2Img.Location = new System.Drawing.Point(62, 269);
             this.CharacterScroll2Img.Name = "CharacterScroll2Img";
             this.CharacterScroll2Img.Size = new System.Drawing.Size(37, 36);
+            this.CharacterScroll2Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterScroll2Img.TabIndex = 15;
             this.CharacterScroll2Img.TabStop = false;
             // 
             // CharacterScroll3Img
             // 
-            this.CharacterScroll3Img.Location = new System.Drawing.Point(89, 219);
+            this.CharacterScroll3Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterScroll3Img.Image")));
+            this.CharacterScroll3Img.Location = new System.Drawing.Point(105, 269);
             this.CharacterScroll3Img.Name = "CharacterScroll3Img";
             this.CharacterScroll3Img.Size = new System.Drawing.Size(37, 36);
+            this.CharacterScroll3Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterScroll3Img.TabIndex = 16;
             this.CharacterScroll3Img.TabStop = false;
             // 
             // CharacterPotion1Img
             // 
-            this.CharacterPotion1Img.Location = new System.Drawing.Point(7, 261);
+            this.CharacterPotion1Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterPotion1Img.Image")));
+            this.CharacterPotion1Img.Location = new System.Drawing.Point(23, 311);
             this.CharacterPotion1Img.Name = "CharacterPotion1Img";
             this.CharacterPotion1Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterPotion1Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterPotion1Img.TabIndex = 17;
             this.CharacterPotion1Img.TabStop = false;
             // 
             // CharacterPotion2Img
             // 
-            this.CharacterPotion2Img.Location = new System.Drawing.Point(42, 261);
+            this.CharacterPotion2Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterPotion2Img.Image")));
+            this.CharacterPotion2Img.Location = new System.Drawing.Point(58, 311);
             this.CharacterPotion2Img.Name = "CharacterPotion2Img";
             this.CharacterPotion2Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterPotion2Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterPotion2Img.TabIndex = 18;
             this.CharacterPotion2Img.TabStop = false;
             // 
             // CharacterPotion3Img
             // 
-            this.CharacterPotion3Img.Location = new System.Drawing.Point(77, 261);
+            this.CharacterPotion3Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterPotion3Img.Image")));
+            this.CharacterPotion3Img.Location = new System.Drawing.Point(93, 311);
             this.CharacterPotion3Img.Name = "CharacterPotion3Img";
             this.CharacterPotion3Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterPotion3Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterPotion3Img.TabIndex = 19;
             this.CharacterPotion3Img.TabStop = false;
             // 
             // CharacterPotion4Img
             // 
-            this.CharacterPotion4Img.Location = new System.Drawing.Point(113, 261);
+            this.CharacterPotion4Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterPotion4Img.Image")));
+            this.CharacterPotion4Img.Location = new System.Drawing.Point(129, 311);
             this.CharacterPotion4Img.Name = "CharacterPotion4Img";
             this.CharacterPotion4Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterPotion4Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterPotion4Img.TabIndex = 20;
             this.CharacterPotion4Img.TabStop = false;
             // 
             // CharacterPotion5Img
             // 
-            this.CharacterPotion5Img.Location = new System.Drawing.Point(148, 261);
+            this.CharacterPotion5Img.Image = ((System.Drawing.Image)(resources.GetObject("CharacterPotion5Img.Image")));
+            this.CharacterPotion5Img.Location = new System.Drawing.Point(164, 311);
             this.CharacterPotion5Img.Name = "CharacterPotion5Img";
             this.CharacterPotion5Img.Size = new System.Drawing.Size(29, 30);
+            this.CharacterPotion5Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterPotion5Img.TabIndex = 21;
             this.CharacterPotion5Img.TabStop = false;
             // 
             // CharacterIntellgence
             // 
             this.CharacterIntellgence.AutoSize = true;
-            this.CharacterIntellgence.Location = new System.Drawing.Point(208, 278);
+            this.CharacterIntellgence.Location = new System.Drawing.Point(224, 328);
             this.CharacterIntellgence.Name = "CharacterIntellgence";
             this.CharacterIntellgence.Size = new System.Drawing.Size(64, 13);
             this.CharacterIntellgence.TabIndex = 31;
@@ -288,7 +329,7 @@
             // CharacterAgility
             // 
             this.CharacterAgility.AutoSize = true;
-            this.CharacterAgility.Location = new System.Drawing.Point(208, 251);
+            this.CharacterAgility.Location = new System.Drawing.Point(224, 301);
             this.CharacterAgility.Name = "CharacterAgility";
             this.CharacterAgility.Size = new System.Drawing.Size(37, 13);
             this.CharacterAgility.TabIndex = 30;
@@ -297,7 +338,7 @@
             // CharacterStrength
             // 
             this.CharacterStrength.AutoSize = true;
-            this.CharacterStrength.Location = new System.Drawing.Point(208, 227);
+            this.CharacterStrength.Location = new System.Drawing.Point(224, 277);
             this.CharacterStrength.Name = "CharacterStrength";
             this.CharacterStrength.Size = new System.Drawing.Size(53, 13);
             this.CharacterStrength.TabIndex = 29;
@@ -306,7 +347,7 @@
             // CharacterMana
             // 
             this.CharacterMana.AutoSize = true;
-            this.CharacterMana.Location = new System.Drawing.Point(5, 28);
+            this.CharacterMana.Location = new System.Drawing.Point(21, 53);
             this.CharacterMana.Name = "CharacterMana";
             this.CharacterMana.Size = new System.Drawing.Size(37, 13);
             this.CharacterMana.TabIndex = 28;
@@ -315,7 +356,7 @@
             // CharacterHealth
             // 
             this.CharacterHealth.AutoSize = true;
-            this.CharacterHealth.Location = new System.Drawing.Point(4, 4);
+            this.CharacterHealth.Location = new System.Drawing.Point(20, 29);
             this.CharacterHealth.Name = "CharacterHealth";
             this.CharacterHealth.Size = new System.Drawing.Size(41, 13);
             this.CharacterHealth.TabIndex = 27;
@@ -323,7 +364,7 @@
             // 
             // ToMainScene
             // 
-            this.ToMainScene.Location = new System.Drawing.Point(520, 326);
+            this.ToMainScene.Location = new System.Drawing.Point(417, 328);
             this.ToMainScene.Name = "ToMainScene";
             this.ToMainScene.Size = new System.Drawing.Size(75, 23);
             this.ToMainScene.TabIndex = 32;
@@ -332,7 +373,7 @@
             // 
             // ToStoreBtn
             // 
-            this.ToStoreBtn.Location = new System.Drawing.Point(619, 326);
+            this.ToStoreBtn.Location = new System.Drawing.Point(498, 328);
             this.ToStoreBtn.Name = "ToStoreBtn";
             this.ToStoreBtn.Size = new System.Drawing.Size(75, 23);
             this.ToStoreBtn.TabIndex = 33;

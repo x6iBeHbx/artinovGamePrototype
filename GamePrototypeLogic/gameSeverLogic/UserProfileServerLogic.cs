@@ -26,5 +26,11 @@ namespace GamePrototypeLogic.gameSeverLogic
         {
             return GetAllUsers().FirstOrDefault(x => x.EMail.Equals(email));
         }
+
+        public bool IsUserLoginDataValid(string login, string password)
+        {
+            UserProfile user = GetUserByLogin(login);
+            return user != null && user.Login == login && user.Password == password;
+        }
     }
 }

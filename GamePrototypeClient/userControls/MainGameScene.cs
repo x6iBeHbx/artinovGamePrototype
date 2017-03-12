@@ -31,5 +31,11 @@ namespace GamePrototypeClient.userControls
         {
 
         }
+
+        private void CharacterInfoBtn_Click(object sender, EventArgs e)
+        {
+            var userInfoScreen = new CharacterPage();
+            this.Controls.Add(userInfoScreen);
+        }
     }
 }

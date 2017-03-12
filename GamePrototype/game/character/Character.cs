@@ -18,5 +18,7 @@ namespace GamePrototypeClasses.game.character
         public CharacterEquipment CharacterEquipment { get; set; }
         [Required]
         public CharacterTypeEnum CharacterType { get; set; }
+        [Required]
+        public Double Balance { get; set; }
     }
 }

@@ -12,6 +12,24 @@
       <xsd:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IGamePrototypeService_GetUserByLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByLogin" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetUserByLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetUserByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetUserByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_IsUserLoginDataValid_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserLoginDataValid" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_IsUserLoginDataValid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUserLoginDataValidResponse" />
+  </wsdl:message>
   <wsdl:message name="IGamePrototypeService_SetUserProfile_InputMessage">
     <wsdl:part name="parameters" element="tns:SetUserProfile" />
   </wsdl:message>
@@ -25,6 +43,18 @@
     <wsdl:part name="parameters" element="tns:SetCharacterResponse" />
   </wsdl:message>
   <wsdl:portType name="IGamePrototypeService">
+    <wsdl:operation name="GetUserByLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetUserByLogin" message="tns:IGamePrototypeService_GetUserByLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetUserByLoginResponse" message="tns:IGamePrototypeService_GetUserByLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetUserByEmail" message="tns:IGamePrototypeService_GetUserByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetUserByEmailResponse" message="tns:IGamePrototypeService_GetUserByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUserLoginDataValid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid" message="tns:IGamePrototypeService_IsUserLoginDataValid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValidResponse" message="tns:IGamePrototypeService_IsUserLoginDataValid_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="SetUserProfile">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfile" message="tns:IGamePrototypeService_SetUserProfile_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse" message="tns:IGamePrototypeService_SetUserProfile_OutputMessage" />
@@ -36,6 +66,33 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGamePrototypeService" type="tns:IGamePrototypeService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserByLogin">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetUserByLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByEmail">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetUserByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUserLoginDataValid">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="SetUserProfile">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetUserProfile" style="document" />
       <wsdl:input>

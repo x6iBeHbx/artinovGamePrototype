@@ -24,6 +24,8 @@ namespace GamePrototypeWcf
         UserProfile GetUserByLogin(string login);
         [OperationContract]
         UserProfile GetUserByEmail(string email);
+        [OperationContract]
+        bool IsUserLoginDataValid(string login, string pass);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]

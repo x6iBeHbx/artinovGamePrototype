@@ -42,6 +42,11 @@ namespace GamePrototypeWcf
             return _serverLogicManager.UserProfileServerLogic.GetUserByEmail(email);
         }
 
+        public bool IsUserLoginDataValid(string login, string pass)
+        {
+            return _serverLogicManager.UserProfileServerLogic.IsUserLoginDataValid(login, pass);
+        }
+
 
         #endregion 
     }

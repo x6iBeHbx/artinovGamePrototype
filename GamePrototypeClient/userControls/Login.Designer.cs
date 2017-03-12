@@ -55,6 +55,8 @@
             this.LoginLable.Size = new System.Drawing.Size(221, 20);
             this.LoginLable.TabIndex = 1;
             this.LoginLable.Text = "Login";
+            this.LoginLable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LoginLable_MouseClick);
+            this.LoginLable.TextChanged += new System.EventHandler(this.LoginLable_TextChanged);
             // 
             // PasswordLable
             // 
@@ -65,6 +67,8 @@
             this.PasswordLable.Size = new System.Drawing.Size(221, 20);
             this.PasswordLable.TabIndex = 2;
             this.PasswordLable.Text = "Password";
+            this.PasswordLable.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PasswordLable_MouseClick);
+            this.PasswordLable.TextChanged += new System.EventHandler(this.PasswordLable_TextChanged);
             // 
             // label1
             // 
