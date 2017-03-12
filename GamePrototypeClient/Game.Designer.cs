@@ -36,14 +36,14 @@
             this.MainSceneListBox.FormattingEnabled = true;
             this.MainSceneListBox.Location = new System.Drawing.Point(-5, -13);
             this.MainSceneListBox.Name = "MainSceneListBox";
-            this.MainSceneListBox.Size = new System.Drawing.Size(716, 342);
+            this.MainSceneListBox.Size = new System.Drawing.Size(720, 355);
             this.MainSceneListBox.TabIndex = 0;
             // 
             // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(704, 322);
+            this.ClientSize = new System.Drawing.Size(720, 344);
             this.Controls.Add(this.MainSceneListBox);
             this.Name = "GameForm";
             this.Text = "Game";

@@ -13,7 +13,6 @@ namespace GamePrototypeDB.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         CharacterType = c.Int(nullable: false),
-                        Balance = c.Double(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GamePrototypeClient.gameForms;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
@@ -87,6 +88,12 @@ namespace GamePrototypeClient.userControls
            
             this.Enabled = false;
             this.Dispose();
+        }
+
+        private void AdminButton_Click(object sender, EventArgs e)
+        {
+            var adminForm = new AdminWinForm();
+            adminForm.Show();
         }
     }
 }

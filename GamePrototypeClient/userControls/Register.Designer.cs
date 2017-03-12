@@ -66,6 +66,7 @@
             this.registerBtn.TabIndex = 0;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // label1
             // 
@@ -255,7 +256,6 @@
             this.HeroesTypeComboBox.Name = "HeroesTypeComboBox";
             this.HeroesTypeComboBox.Size = new System.Drawing.Size(115, 21);
             this.HeroesTypeComboBox.TabIndex = 27;
-            this.HeroesTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.HeroesTypeComboBox_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -280,6 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.LoadCharacterImgBtn);
             this.Controls.Add(this.HeroesTypeComboBox);
             this.Controls.Add(this.label13);

@@ -34,6 +34,7 @@
             this.PasswordLable = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ToRegisterBtn = new System.Windows.Forms.Button();
+            this.AdminButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LoginBtn
@@ -90,12 +91,24 @@
             this.ToRegisterBtn.UseVisualStyleBackColor = true;
             this.ToRegisterBtn.Click += new System.EventHandler(this.ToRegisterBtn_Click);
             // 
+            // AdminButton
+            // 
+            this.AdminButton.Location = new System.Drawing.Point(26, 322);
+            this.AdminButton.Name = "AdminButton";
+            this.AdminButton.Size = new System.Drawing.Size(75, 23);
+            this.AdminButton.TabIndex = 5;
+            this.AdminButton.Text = "Admin";
+            this.AdminButton.UseVisualStyleBackColor = true;
+            this.AdminButton.Click += new System.EventHandler(this.AdminButton_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.ToRegisterBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PasswordLable);
@@ -115,5 +128,6 @@
         private System.Windows.Forms.TextBox PasswordLable;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button ToRegisterBtn;
+        private System.Windows.Forms.Button AdminButton;
     }
 }
