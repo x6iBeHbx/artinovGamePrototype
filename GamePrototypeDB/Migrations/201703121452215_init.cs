@@ -13,6 +13,7 @@ namespace GamePrototypeDB.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         CharacterType = c.Int(nullable: false),
+                        Balance = c.Double(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),
@@ -22,6 +23,7 @@ namespace GamePrototypeDB.Migrations
                         Agility = c.Int(nullable: false),
                         Intelligence = c.Int(nullable: false),
                         ImageUrl = c.String(nullable: false),
+                        Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
                         CharacterEquipment_Id = c.Guid(nullable: false),
@@ -107,7 +109,6 @@ namespace GamePrototypeDB.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         ThingsType = c.Int(nullable: false),
-                        Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),
@@ -117,6 +118,7 @@ namespace GamePrototypeDB.Migrations
                         Agility = c.Int(nullable: false),
                         Intelligence = c.Int(nullable: false),
                         ImageUrl = c.String(nullable: false),
+                        Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
                         SpecialThingBonus_Id = c.Guid(nullable: false),
@@ -143,7 +145,6 @@ namespace GamePrototypeDB.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         ThingsType = c.Int(nullable: false),
-                        Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),
@@ -153,6 +154,7 @@ namespace GamePrototypeDB.Migrations
                         Agility = c.Int(nullable: false),
                         Intelligence = c.Int(nullable: false),
                         ImageUrl = c.String(nullable: false),
+                        Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
                         SpecialThingBonus_Id = c.Guid(nullable: false),
@@ -167,7 +169,6 @@ namespace GamePrototypeDB.Migrations
                     {
                         Id = c.Guid(nullable: false),
                         ThingsType = c.Int(nullable: false),
-                        Price = c.Int(nullable: false),
                         Health = c.Int(nullable: false),
                         Mana = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),
@@ -177,6 +178,7 @@ namespace GamePrototypeDB.Migrations
                         Agility = c.Int(nullable: false),
                         Intelligence = c.Int(nullable: false),
                         ImageUrl = c.String(nullable: false),
+                        Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
                         SpecialThingBonus_Id = c.Guid(nullable: false),

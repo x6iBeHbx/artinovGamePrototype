@@ -16,7 +16,5 @@ namespace GamePrototypeClasses.core
         public ThingsTypeEnum ThingsType { get; set; }
         [Required]
         public SpecialThingBonus SpecialThingBonus {get; set; }
-        [Required]
-        public int Price { get; set; }
     }
 }

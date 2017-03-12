@@ -27,5 +27,7 @@ namespace GamePrototypeClasses.core
         public int Intelligence { set; get; }
         [Required]
         public string ImageUrl { set; get; }
+        [Required]
+        public int Coins { get; set; }
     }
 }
