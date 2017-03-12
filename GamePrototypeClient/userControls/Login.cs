@@ -13,16 +13,16 @@ namespace GamePrototypeClient.userControls
 {
     public partial class Login : UserControl
     {
-        public delegate void LoginFormDelegate();
+        public delegate void LoginFormDelegate(UserControl key);
 
         public EventHandler MyEvent;
 
-        private readonly LoginFormDelegate _callBackDelegate;
+        private readonly LoginFormDelegate _loginDelegate;
 
         public Login(LoginFormDelegate formDelegate)
         {
             InitializeComponent();
-            _callBackDelegate = formDelegate;
+            _loginDelegate = formDelegate;
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
@@ -35,12 +35,19 @@ namespace GamePrototypeClient.userControls
                 if (clientService.IsUserLoginDataValid(login, password))
                 {
                     Close();
+                    _loginDelegate(new MainGameScene());
                 }
                 else
                 {
                     MessageBox.Show("Wrong Login/Password");
                 }
             }
+        }
+
+        private void ToRegisterBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+            _loginDelegate(new Register());
         }
 
         private void LoginLable_TextChanged(object sender, EventArgs e)
@@ -77,7 +84,7 @@ namespace GamePrototypeClient.userControls
 
         public void Close()
         {
-            _callBackDelegate();
+           
             this.Enabled = false;
             this.Dispose();
         }

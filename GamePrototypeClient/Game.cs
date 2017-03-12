@@ -21,16 +21,16 @@ namespace GamePrototypeClient
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            var loginForm = new Login(OnMyEvent) {AutoScroll = true};
+            var loginForm = new Login(OpenNewScene) {AutoScroll = true};
             AddUserControl(loginForm);
             loginForm.Show();
         }
 
-        private void OnMyEvent()
+        private void OpenNewScene(UserControl newScene)
         {
-            var mainGameScene = new MainGameScene() { AutoScroll = true };
-            AddUserControl(mainGameScene);
-            mainGameScene.Show();
+            newScene.AutoSize = true;
+            AddUserControl(newScene);
+            newScene.Show();
         }
 
         private void AddUserControl(UserControl control)

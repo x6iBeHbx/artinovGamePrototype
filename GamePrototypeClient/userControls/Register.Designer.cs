@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.registerBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.LoginBox = new System.Windows.Forms.TextBox();
@@ -70,7 +71,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(255, 4);
+            this.label1.Location = new System.Drawing.Point(255, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 1;
@@ -223,16 +224,18 @@
             // 
             // CharacterImage
             // 
-            this.CharacterImage.Location = new System.Drawing.Point(310, 56);
+            this.CharacterImage.Image = ((System.Drawing.Image)(resources.GetObject("CharacterImage.Image")));
+            this.CharacterImage.Location = new System.Drawing.Point(323, 53);
             this.CharacterImage.Name = "CharacterImage";
-            this.CharacterImage.Size = new System.Drawing.Size(100, 106);
+            this.CharacterImage.Size = new System.Drawing.Size(98, 181);
+            this.CharacterImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterImage.TabIndex = 23;
             this.CharacterImage.TabStop = false;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(280, 187);
+            this.label12.Location = new System.Drawing.Point(273, 243);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 13);
             this.label12.TabIndex = 25;
@@ -240,7 +243,7 @@
             // 
             // NicknameBox
             // 
-            this.NicknameBox.Location = new System.Drawing.Point(340, 184);
+            this.NicknameBox.Location = new System.Drawing.Point(333, 240);
             this.NicknameBox.Name = "NicknameBox";
             this.NicknameBox.Size = new System.Drawing.Size(100, 20);
             this.NicknameBox.TabIndex = 24;
@@ -248,15 +251,16 @@
             // HeroesTypeComboBox
             // 
             this.HeroesTypeComboBox.FormattingEnabled = true;
-            this.HeroesTypeComboBox.Location = new System.Drawing.Point(340, 210);
+            this.HeroesTypeComboBox.Location = new System.Drawing.Point(333, 266);
             this.HeroesTypeComboBox.Name = "HeroesTypeComboBox";
             this.HeroesTypeComboBox.Size = new System.Drawing.Size(115, 21);
             this.HeroesTypeComboBox.TabIndex = 27;
+            this.HeroesTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.HeroesTypeComboBox_SelectedIndexChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(267, 213);
+            this.label13.Location = new System.Drawing.Point(260, 269);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(68, 13);
             this.label13.TabIndex = 26;
@@ -264,12 +268,13 @@
             // 
             // LoadCharacterImgBtn
             // 
-            this.LoadCharacterImgBtn.Location = new System.Drawing.Point(416, 139);
+            this.LoadCharacterImgBtn.Location = new System.Drawing.Point(427, 134);
             this.LoadCharacterImgBtn.Name = "LoadCharacterImgBtn";
             this.LoadCharacterImgBtn.Size = new System.Drawing.Size(75, 23);
             this.LoadCharacterImgBtn.TabIndex = 28;
             this.LoadCharacterImgBtn.Text = "Load";
             this.LoadCharacterImgBtn.UseVisualStyleBackColor = true;
+            this.LoadCharacterImgBtn.Click += new System.EventHandler(this.LoadCharacterImgBtn_Click);
             // 
             // Register
             // 
