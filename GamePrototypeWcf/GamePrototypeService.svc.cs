@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
 using GamePrototypeClasses.user;
 using GamePrototypeLogic;
@@ -26,6 +27,11 @@ namespace GamePrototypeWcf
         public void SetCharacter(Character character)
         {
             _serverLogicManager.CharacterBaseBusinessLogic.AddEntity(character);
+        }
+
+        public void SetNewThing(ThingEntity thing)
+        {
+            _serverLogicManager.ThingsServerLogic.;
         }
 
         #endregion

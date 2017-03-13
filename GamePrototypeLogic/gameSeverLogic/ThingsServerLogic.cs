@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using GamePrototypeClasses.core;
+using GamePrototypeClasses.enums;
 using GamePrototypeClasses.game.character;
 using GamePrototypeClasses.game.character.warehouse;
+using GamePrototypeClasses.game.thinks;
 using GamePrototypeDB.gameRepositories;
 
 namespace GamePrototypeLogic.gameSeverLogic
 {
-    class ThingsServerLogic : BaseBusinessLogic<ThingEntity>
+    public class ThingsServerLogic : BaseBusinessLogic<Things>
     {
-        private readonly ThingsRepository _characterRepository = new ThingsRepository();
-        public IEnumerable<ThingEntity> GetAllThings()
+        private readonly ThingsRepository _thingRepository = new ThingsRepository();
+        public IEnumerable<Things> GetAllThings()
         {
-            return _characterRepository.GetAll();
+            return _thingRepository.GetAll();
         }
     }
 }

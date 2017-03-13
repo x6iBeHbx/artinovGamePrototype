@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using GamePrototypeClasses.core;
 using GamePrototypeClasses.enums;
 using GamePrototypeClasses.game.character;
 using GamePrototypeClasses.game.character.warehouse;
@@ -123,12 +124,14 @@ namespace GamePrototypeWcf
         [OperationContract]
         void SetUserProfile(UserProfile userProfile);
 
-
         //void UpdateUserProfile(UserProfile userProfile);
         ////character
         [OperationContract]
         void SetCharacter(Character character);
 
-    #endregion
+        [OperationContract]
+        void SetNewThing(ThingEntity thing);
+        
+        #endregion
     }
 }
