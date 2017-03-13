@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseBusinessLogic.cs" />
+    <Compile Include="gameSeverLogic\CharacterServerLogic.cs" />
+    <Compile Include="gameSeverLogic\CharacterThingsServerLogic.cs" />
+    <Compile Include="gameSeverLogic\ThingsServerLogic.cs" />
     <Compile Include="gameSeverLogic\UserProfileServerLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

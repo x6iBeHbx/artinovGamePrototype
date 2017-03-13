@@ -9,13 +9,12 @@ using GamePrototypeClasses.game.thinks;
 
 namespace GamePrototypeDB.gameRepositories
 {
-    class ThingsRepository : BaseRepository<ThingEntity>
+    public class ThingsRepository : BaseRepository<ThingEntity>
     {
         public override IQueryable<ThingEntity> GetAll()
         {
             return Context.Things
-                .Include(x => x.SpecialThingBonus)
-                .Include(x => x.ThingsType);
+                .Include(x => x.SpecialThingBonus);
         }
     }
 }

@@ -47,17 +47,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="core\ItemsUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="core\ItemsUserControl.Designer.cs">
-      <DependentUpon>ItemsUserControl.cs</DependentUpon>
-    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameForms\adminUserControls\ItemsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gameForms\adminUserControls\ItemsUserControl.Designer.cs">
+      <DependentUpon>ItemsUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="gameForms\adminUserControls\ItemUserControl.cs">
       <SubType>UserControl</SubType>
@@ -102,11 +102,14 @@
     <Compile Include="userControls\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="core\ItemsUserControl.resx">
-      <DependentUpon>ItemsUserControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameForms\adminUserControls\ItemsUserControl.resx">
+      <DependentUpon>ItemsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameForms\adminUserControls\ItemUserControl.resx">
+      <DependentUpon>ItemUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gameForms\AdminWinForm.resx">
       <DependentUpon>AdminWinForm.cs</DependentUpon>
@@ -198,7 +201,9 @@
       <Name>GamePrototypeClasses</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="core\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

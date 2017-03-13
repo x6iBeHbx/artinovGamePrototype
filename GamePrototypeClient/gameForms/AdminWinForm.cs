@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClient.core;
+using GamePrototypeClient.gameForms.adminUserControls;
 
 namespace GamePrototypeClient.gameForms
 {

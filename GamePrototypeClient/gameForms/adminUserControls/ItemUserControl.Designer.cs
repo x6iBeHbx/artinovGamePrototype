@@ -54,7 +54,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.UpdateItemBtn = new System.Windows.Forms.Button();
+            this.ThingTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.SpecialThingBonusList = new System.Windows.Forms.ListView();
+            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -220,7 +224,7 @@
             // 
             // ImageBox
             // 
-            this.ImageBox.Location = new System.Drawing.Point(265, 23);
+            this.ImageBox.Location = new System.Drawing.Point(402, 13);
             this.ImageBox.Name = "ImageBox";
             this.ImageBox.Size = new System.Drawing.Size(72, 69);
             this.ImageBox.TabIndex = 20;
@@ -228,7 +232,7 @@
             // 
             // LoadImgBtn
             // 
-            this.LoadImgBtn.Location = new System.Drawing.Point(357, 49);
+            this.LoadImgBtn.Location = new System.Drawing.Point(494, 39);
             this.LoadImgBtn.Name = "LoadImgBtn";
             this.LoadImgBtn.Size = new System.Drawing.Size(75, 23);
             this.LoadImgBtn.TabIndex = 21;
@@ -254,7 +258,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(265, 122);
+            this.label12.Location = new System.Drawing.Point(171, 23);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(58, 13);
             this.label12.TabIndex = 24;
@@ -263,25 +267,59 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(265, 257);
+            this.label13.Location = new System.Drawing.Point(196, 154);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 13);
             this.label13.TabIndex = 25;
             this.label13.Text = "SpecialBonus";
             // 
-            // listBox1
+            // UpdateItemBtn
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(357, 188);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(226, 134);
-            this.listBox1.TabIndex = 26;
+            this.UpdateItemBtn.Location = new System.Drawing.Point(494, 296);
+            this.UpdateItemBtn.Name = "UpdateItemBtn";
+            this.UpdateItemBtn.Size = new System.Drawing.Size(75, 23);
+            this.UpdateItemBtn.TabIndex = 26;
+            this.UpdateItemBtn.Text = "Save";
+            this.UpdateItemBtn.UseVisualStyleBackColor = true;
+            this.UpdateItemBtn.Click += new System.EventHandler(this.UpdateItemBtn_Click);
+            // 
+            // ThingTypeComboBox
+            // 
+            this.ThingTypeComboBox.FormattingEnabled = true;
+            this.ThingTypeComboBox.Location = new System.Drawing.Point(236, 20);
+            this.ThingTypeComboBox.Name = "ThingTypeComboBox";
+            this.ThingTypeComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ThingTypeComboBox.TabIndex = 27;
+            // 
+            // SpecialThingBonusList
+            // 
+            this.SpecialThingBonusList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Name,
+            this.Description});
+            this.SpecialThingBonusList.Location = new System.Drawing.Point(274, 102);
+            this.SpecialThingBonusList.Name = "SpecialThingBonusList";
+            this.SpecialThingBonusList.Size = new System.Drawing.Size(295, 188);
+            this.SpecialThingBonusList.TabIndex = 28;
+            this.SpecialThingBonusList.UseCompatibleStateImageBehavior = false;
+            this.SpecialThingBonusList.View = System.Windows.Forms.View.Details;
+            // 
+            // Name
+            // 
+            this.Name.Text = "Name";
+            this.Name.Width = 79;
+            // 
+            // Description
+            // 
+            this.Description.Text = "Description";
+            this.Description.Width = 212;
             // 
             // ItemUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.SpecialThingBonusList);
+            this.Controls.Add(this.ThingTypeComboBox);
+            this.Controls.Add(this.UpdateItemBtn);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.CoinsBox);
@@ -344,6 +382,10 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button UpdateItemBtn;
+        private System.Windows.Forms.ComboBox ThingTypeComboBox;
+        private System.Windows.Forms.ListView SpecialThingBonusList;
+        private System.Windows.Forms.ColumnHeader Name;
+        private System.Windows.Forms.ColumnHeader Description;
     }
 }

@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameDBContext.cs" />
+    <Compile Include="gameRepositories\CharacterRepository.cs" />
     <Compile Include="gameRepositories\ThingsRepository.cs" />
     <Compile Include="gameRepositories\UserRepository.cs" />
     <Compile Include="Migrations\201703122123087_init.cs" />

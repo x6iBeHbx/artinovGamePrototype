@@ -1,4 +1,4 @@
-﻿namespace GamePrototypeClient.core
+﻿namespace GamePrototypeClient.gameForms.adminUserControls
 {
     partial class ItemsUserControl
     {
