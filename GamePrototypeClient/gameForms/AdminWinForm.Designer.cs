@@ -80,6 +80,7 @@
             this.AddItem.Name = "AddItem";
             this.AddItem.Size = new System.Drawing.Size(152, 22);
             this.AddItem.Text = "Add";
+            this.AddItem.Click += new System.EventHandler(this.AddItem_Click);
             // 
             // DeleteItem
             // 

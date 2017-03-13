@@ -45,5 +45,12 @@ namespace GamePrototypeClient.gameForms
 
             this.AdminSplitContainer.Panel2.Controls.Add(itemUserControl);
         }
+
+        private void AddItem_Click(object sender, EventArgs e)
+        {
+            this.AdminSplitContainer.Panel2.Controls.Clear();
+            var itemUserControl = new ItemUserControl();
+            this.AdminSplitContainer.Panel2.Controls.Add(itemUserControl);
+        }
     }
 }

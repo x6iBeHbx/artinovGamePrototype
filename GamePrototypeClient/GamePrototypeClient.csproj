@@ -59,6 +59,12 @@
     <Compile Include="Game.Designer.cs">
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameForms\adminUserControls\ItemUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gameForms\adminUserControls\ItemUserControl.Designer.cs">
+      <DependentUpon>ItemUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="gameForms\AdminWinForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,9 +198,7 @@
       <Name>GamePrototypeClasses</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="gameForms\adminUserControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
