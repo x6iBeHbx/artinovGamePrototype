@@ -15,9 +15,14 @@ namespace GamePrototypeLogic.gameSeverLogic
     public class ThingsServerLogic : BaseBusinessLogic<Things>
     {
         private readonly ThingsRepository _thingRepository = new ThingsRepository();
-        public IEnumerable<Things> GetAllThings()
+        public IQueryable<Things> GetAllThings()
         {
             return _thingRepository.GetAll();
+        }
+
+        public void SetThing(Things thing)
+        {
+            _thingRepository.Add(thing);
         }
     }
 }

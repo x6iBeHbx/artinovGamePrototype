@@ -7,36 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.user;
 
 namespace GamePrototypeClient.userControls
 {
     public partial class MainGameScene : UserControl
     {
-        public MainGameScene()
+        private Character _characte;
+        public MainGameScene(Character character)
         {
             InitializeComponent();
-        }
 
-        private void pictureBox14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-
+            _characte = character;
+            Image image = Image.FromFile(character.ImageUrl);
+            CharacterImageBox.Image = image;
+            NickName.Text = character.Name;
+            CharacterLevel.Text += character.Level;
+            CharacterCoins.Text += character.Coins;
+            CharacterIntellgence.Text += character.Intelligence;
+            CharacterAgility.Text += character.Agility;
+            CharacterStrength.Text += character.Attack;
+            CharacterHealth.Text += character.Health;
+            CharacterMana.Text += character.Mana;
         }
 
         private void MainGameScene_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void CharacterInfoBtn_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            var userInfoScreen = new CharacterPage();
+            var userInfoScreen = new CharacterPage(_characte);
             Parent.Controls.Add(userInfoScreen);
+            this.Dispose();
         }
     }
 }

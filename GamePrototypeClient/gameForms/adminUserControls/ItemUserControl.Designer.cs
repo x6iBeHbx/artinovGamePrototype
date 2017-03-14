@@ -57,7 +57,7 @@
             this.UpdateItemBtn = new System.Windows.Forms.Button();
             this.ThingTypeComboBox = new System.Windows.Forms.ComboBox();
             this.SpecialThingBonusList = new System.Windows.Forms.ListView();
-            this.Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SpecialBonusName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox)).BeginInit();
             this.SuspendLayout();
@@ -227,6 +227,7 @@
             this.ImageBox.Location = new System.Drawing.Point(402, 13);
             this.ImageBox.Name = "ImageBox";
             this.ImageBox.Size = new System.Drawing.Size(72, 69);
+            this.ImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageBox.TabIndex = 20;
             this.ImageBox.TabStop = false;
             // 
@@ -238,6 +239,7 @@
             this.LoadImgBtn.TabIndex = 21;
             this.LoadImgBtn.Text = "Load";
             this.LoadImgBtn.UseVisualStyleBackColor = true;
+            this.LoadImgBtn.Click += new System.EventHandler(this.LoadImgBtn_Click);
             // 
             // CoinsBox
             // 
@@ -294,7 +296,7 @@
             // SpecialThingBonusList
             // 
             this.SpecialThingBonusList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Name,
+            this.SpecialBonusName,
             this.Description});
             this.SpecialThingBonusList.Location = new System.Drawing.Point(274, 102);
             this.SpecialThingBonusList.Name = "SpecialThingBonusList";
@@ -303,10 +305,10 @@
             this.SpecialThingBonusList.UseCompatibleStateImageBehavior = false;
             this.SpecialThingBonusList.View = System.Windows.Forms.View.Details;
             // 
-            // Name
+            // SpecialBonusName
             // 
-            this.Name.Text = "Name";
-            this.Name.Width = 79;
+            this.SpecialBonusName.Text = "Name";
+            this.SpecialBonusName.Width = 79;
             // 
             // Description
             // 
@@ -385,7 +387,7 @@
         private System.Windows.Forms.Button UpdateItemBtn;
         private System.Windows.Forms.ComboBox ThingTypeComboBox;
         private System.Windows.Forms.ListView SpecialThingBonusList;
-        private System.Windows.Forms.ColumnHeader Name;
+        private System.Windows.Forms.ColumnHeader SpecialBonusName;
         private System.Windows.Forms.ColumnHeader Description;
     }
 }

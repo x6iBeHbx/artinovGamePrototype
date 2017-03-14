@@ -22,6 +22,7 @@
         <xs:sequence>
           <xs:element minOccurs="0" name="Agility" type="xs:int" />
           <xs:element minOccurs="0" name="Attack" type="xs:int" />
+          <xs:element minOccurs="0" name="Coins" type="xs:int" />
           <xs:element minOccurs="0" name="Defense" type="xs:int" />
           <xs:element minOccurs="0" name="Health" type="xs:int" />
           <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
@@ -48,7 +49,6 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:MainOptionsEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="Price" type="xs:int" />
           <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="SpecialThingBonus" nillable="true" type="q1:SpecialThingBonus" />
           <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" minOccurs="0" name="ThingsType" type="q2:ThingsTypeEnum" />
         </xs:sequence>

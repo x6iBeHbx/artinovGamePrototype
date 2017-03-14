@@ -42,6 +42,12 @@
   <wsdl:message name="IGamePrototypeService_SetCharacter_OutputMessage">
     <wsdl:part name="parameters" element="tns:SetCharacterResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_SetThing_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetThing" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_SetThing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetThingResponse" />
+  </wsdl:message>
   <wsdl:portType name="IGamePrototypeService">
     <wsdl:operation name="GetUserByLogin">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetUserByLogin" message="tns:IGamePrototypeService_GetUserByLogin_InputMessage" />
@@ -62,6 +68,10 @@
     <wsdl:operation name="SetCharacter">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacter" message="tns:IGamePrototypeService_SetCharacter_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacterResponse" message="tns:IGamePrototypeService_SetCharacter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetThing">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetThing" message="tns:IGamePrototypeService_SetThing_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetThingResponse" message="tns:IGamePrototypeService_SetThing_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IGamePrototypeService" type="tns:IGamePrototypeService">
@@ -104,6 +114,15 @@
     </wsdl:operation>
     <wsdl:operation name="SetCharacter">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetCharacter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetThing">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetThing" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -27,6 +27,9 @@ namespace GamePrototypeWcf
         UserProfile GetUserByEmail(string email);
         [OperationContract]
         bool IsUserLoginDataValid(string login, string pass);
+
+        [OperationContract]
+        IQueryable<Things> GetAllThings();
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]
@@ -130,7 +133,7 @@ namespace GamePrototypeWcf
         void SetCharacter(Character character);
 
         [OperationContract]
-        void SetNewThing(ThingEntity thing);
+        void SetThing(Things thing);
         
         #endregion
     }

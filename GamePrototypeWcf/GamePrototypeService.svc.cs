@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.thinks;
 using GamePrototypeClasses.user;
 using GamePrototypeLogic;
 using GamePrototypeLogic.gameSeverLogic;
@@ -29,9 +30,9 @@ namespace GamePrototypeWcf
             _serverLogicManager.CharacterBaseBusinessLogic.AddEntity(character);
         }
 
-        public void SetNewThing(ThingEntity thing)
+        public void SetThing(Things thing)
         {
-            _serverLogicManager.ThingsServerLogic.;
+            _serverLogicManager.ThingsServerLogic.SetThing(thing);
         }
 
         #endregion
@@ -53,6 +54,10 @@ namespace GamePrototypeWcf
             return _serverLogicManager.UserProfileServerLogic.IsUserLoginDataValid(login, pass);
         }
 
+        public IQueryable<Things> GetAllThings()
+        {
+            return _serverLogicManager.ThingsServerLogic.GetAllThings();
+        }
 
         #endregion 
     }

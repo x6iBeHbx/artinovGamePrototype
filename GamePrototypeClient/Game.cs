@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GamePrototypeClasses.game.character;
 using GamePrototypeClient.userControls;
 
 namespace GamePrototypeClient
 {
     public partial class GameForm : Form
     {
-
         public GameForm()
         {
             InitializeComponent();

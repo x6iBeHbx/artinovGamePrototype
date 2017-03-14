@@ -39,6 +39,7 @@
             this.StoreBtn = new System.Windows.Forms.Button();
             this.CharacterCoins = new System.Windows.Forms.Label();
             this.CharacterLevel = new System.Windows.Forms.Label();
+            this.NickName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,6 +50,7 @@
             this.CharacterImageBox.Location = new System.Drawing.Point(15, 57);
             this.CharacterImageBox.Name = "CharacterImageBox";
             this.CharacterImageBox.Size = new System.Drawing.Size(124, 219);
+            this.CharacterImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.CharacterImageBox.TabIndex = 0;
             this.CharacterImageBox.TabStop = false;
             // 
@@ -83,7 +85,7 @@
             // CharacterStrength
             // 
             this.CharacterStrength.AutoSize = true;
-            this.CharacterStrength.Location = new System.Drawing.Point(149, 57);
+            this.CharacterStrength.Location = new System.Drawing.Point(145, 76);
             this.CharacterStrength.Name = "CharacterStrength";
             this.CharacterStrength.Size = new System.Drawing.Size(53, 13);
             this.CharacterStrength.TabIndex = 9;
@@ -92,7 +94,7 @@
             // CharacterAgility
             // 
             this.CharacterAgility.AutoSize = true;
-            this.CharacterAgility.Location = new System.Drawing.Point(149, 81);
+            this.CharacterAgility.Location = new System.Drawing.Point(145, 100);
             this.CharacterAgility.Name = "CharacterAgility";
             this.CharacterAgility.Size = new System.Drawing.Size(37, 13);
             this.CharacterAgility.TabIndex = 10;
@@ -101,7 +103,7 @@
             // CharacterIntellgence
             // 
             this.CharacterIntellgence.AutoSize = true;
-            this.CharacterIntellgence.Location = new System.Drawing.Point(149, 108);
+            this.CharacterIntellgence.Location = new System.Drawing.Point(145, 127);
             this.CharacterIntellgence.Name = "CharacterIntellgence";
             this.CharacterIntellgence.Size = new System.Drawing.Size(64, 13);
             this.CharacterIntellgence.TabIndex = 11;
@@ -119,7 +121,7 @@
             // CharacterCoins
             // 
             this.CharacterCoins.AutoSize = true;
-            this.CharacterCoins.Location = new System.Drawing.Point(3, 36);
+            this.CharacterCoins.Location = new System.Drawing.Point(145, 263);
             this.CharacterCoins.Name = "CharacterCoins";
             this.CharacterCoins.Size = new System.Drawing.Size(36, 13);
             this.CharacterCoins.TabIndex = 13;
@@ -128,17 +130,27 @@
             // CharacterLevel
             // 
             this.CharacterLevel.AutoSize = true;
-            this.CharacterLevel.Location = new System.Drawing.Point(139, 38);
+            this.CharacterLevel.Location = new System.Drawing.Point(145, 51);
             this.CharacterLevel.Name = "CharacterLevel";
             this.CharacterLevel.Size = new System.Drawing.Size(36, 13);
             this.CharacterLevel.TabIndex = 14;
             this.CharacterLevel.Text = "Level:";
+            // 
+            // NickName
+            // 
+            this.NickName.AutoSize = true;
+            this.NickName.Location = new System.Drawing.Point(15, 38);
+            this.NickName.Name = "NickName";
+            this.NickName.Size = new System.Drawing.Size(57, 13);
+            this.NickName.TabIndex = 15;
+            this.NickName.Text = "NickName";
             // 
             // MainGameScene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.Controls.Add(this.NickName);
             this.Controls.Add(this.CharacterLevel);
             this.Controls.Add(this.CharacterCoins);
             this.Controls.Add(this.StoreBtn);
@@ -170,5 +182,6 @@
         private System.Windows.Forms.Button StoreBtn;
         private System.Windows.Forms.Label CharacterCoins;
         private System.Windows.Forms.Label CharacterLevel;
+        private System.Windows.Forms.Label NickName;
     }
 }

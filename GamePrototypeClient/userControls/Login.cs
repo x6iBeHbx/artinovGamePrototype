@@ -35,8 +35,9 @@ namespace GamePrototypeClient.userControls
             {
                 if (clientService.IsUserLoginDataValid(login, password))
                 {
+                    var character = clientService.GetUserByLogin(login).UserCharacter;
                     Close();
-                    _loginDelegate(new MainGameScene());
+                    _loginDelegate(new MainGameScene(character));
                 }
                 else
                 {
@@ -85,7 +86,6 @@ namespace GamePrototypeClient.userControls
 
         public void Close()
         {
-           
             this.Enabled = false;
             this.Dispose();
         }

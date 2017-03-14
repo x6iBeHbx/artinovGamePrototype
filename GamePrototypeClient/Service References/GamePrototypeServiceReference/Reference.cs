@@ -44,6 +44,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/SetCharacterResponse")]
         System.Threading.Tasks.Task SetCharacterAsync(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThing", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingResponse")]
+        void SetThing(GamePrototypeClasses.game.thinks.Things thing);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThing", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingResponse")]
+        System.Threading.Tasks.Task SetThingAsync(GamePrototypeClasses.game.thinks.Things thing);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -111,6 +117,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public System.Threading.Tasks.Task SetCharacterAsync(GamePrototypeClasses.game.character.Character character) {
             return base.Channel.SetCharacterAsync(character);
+        }
+        
+        public void SetThing(GamePrototypeClasses.game.thinks.Things thing) {
+            base.Channel.SetThing(thing);
+        }
+        
+        public System.Threading.Tasks.Task SetThingAsync(GamePrototypeClasses.game.thinks.Things thing) {
+            return base.Channel.SetThingAsync(thing);
         }
     }
 }

@@ -2,6 +2,7 @@
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" />
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" />
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" />
   <xs:element name="GetUserByLogin">
     <xs:complexType>
       <xs:sequence>
@@ -65,6 +66,18 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="SetCharacterResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetThing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q5:Things" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetThingResponse">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>

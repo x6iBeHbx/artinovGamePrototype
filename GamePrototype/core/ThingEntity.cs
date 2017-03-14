@@ -14,7 +14,7 @@ namespace GamePrototypeClasses.core
     {
         [Required]
         public ThingsTypeEnum ThingsType { get; set; }
-        [Required]
+
         public SpecialThingBonus SpecialThingBonus {get; set; }
     }
 }

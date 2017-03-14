@@ -19,6 +19,7 @@ namespace GamePrototypeClient.userControls
     
     public partial class Register : UserControl
     {
+        private Character _character;
         public Register()
         {
             InitializeComponent();
@@ -49,6 +50,7 @@ namespace GamePrototypeClient.userControls
                 loadDialog.ShowDialog();
                 Bitmap img = (Bitmap) Image.FromFile(loadDialog.FileName);
                 CharacterImage.Image = img;
+                CharacterImage.ImageLocation = loadDialog.FileName;
             }
         }
 
@@ -62,10 +64,22 @@ namespace GamePrototypeClient.userControls
             {
                 MessageBox.Show("Plaese write correct Email !!!");
             }
+            else if (!IsPasswordFieldEquals())
+            {
+                MessageBox.Show("Password are not equls !!!");
+            }
             else
             {
                 CreateUserData();
+                var mainGameScene = new MainGameScene(_character);
+                Parent.Controls.Add(mainGameScene);
+                this.Dispose();
             }
+        }
+
+        private bool IsPasswordFieldEquals()
+        {
+            return PassBox1.Text.Equals(PassBox2.Text);
         }
 
         private void CreateUserData()
@@ -78,29 +92,29 @@ namespace GamePrototypeClient.userControls
 
         private Character CreateUserCharacter()
         {
-            var character = new Character();
-            character.Name = NicknameBox.Text;
-            character.CharacterType = (CharacterTypeEnum) ((HeroesTypeComboBox.SelectedIndex == -1) ? HeroesTypeComboBox.Items[0] : HeroesTypeComboBox.Items[HeroesTypeComboBox.SelectedIndex]);
-            character.CharacterWarehouse = new CharacterWarehouse();
-            character.CharacterEquipment = new CharacterEquipment();
+            _character = new Character();
+            _character.Name = NicknameBox.Text;
+            _character.CharacterType = (CharacterTypeEnum) ((HeroesTypeComboBox.SelectedIndex == -1) ? HeroesTypeComboBox.Items[0] : HeroesTypeComboBox.Items[HeroesTypeComboBox.SelectedIndex]);
+            _character.CharacterWarehouse = new CharacterWarehouse();
+            _character.CharacterEquipment = new CharacterEquipment();
 
             //TODO: need create logic for generate directory and save in it image;
             var a = CharacterImage.Name;
-            character.ImageUrl = "https://www.stihi.ru/pics/2010/11/18/3439.jpg";
+            _character.ImageUrl = CharacterImage.ImageLocation;
             //TODO: need get from DB parameters for herouse or do it on server side
-            character.Health = 100;
-            character.Mana = 50;
-            character.Attack = 10;
-            character.MagicAttack = 2;
-            character.Defense = 20;
-            character.MagicDefence = 5;
-            character.Agility = 5;
-            character.Intelligence = 5;
-            character.Coins = 500;
+            _character.Health = 100;
+            _character.Mana = 50;
+            _character.Attack = 10;
+            _character.MagicAttack = 2;
+            _character.Defense = 20;
+            _character.MagicDefence = 5;
+            _character.Agility = 5;
+            _character.Intelligence = 5;
+            _character.Coins = 500;
 
-            character.Level = 1;
+            _character.Level = 1;
 
-            return character;
+            return _character;
         }
 
         private UserProfile CreateUserProfile()

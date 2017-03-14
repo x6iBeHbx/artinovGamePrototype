@@ -370,6 +370,7 @@
             this.ToMainScene.TabIndex = 32;
             this.ToMainScene.Text = "Back";
             this.ToMainScene.UseVisualStyleBackColor = true;
+            this.ToMainScene.Click += new System.EventHandler(this.ToMainScene_Click);
             // 
             // ToStoreBtn
             // 

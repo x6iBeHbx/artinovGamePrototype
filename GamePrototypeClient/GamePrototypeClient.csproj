@@ -102,6 +102,12 @@
     <Compile Include="userControls\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControls\StoreUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControls\StoreUserControl.Designer.cs">
+      <DependentUpon>StoreUserControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="userControls\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControls\StoreUserControl.resx">
+      <DependentUpon>StoreUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="GamePrototypeClasses.user.UserProfile.datasource" />
     <None Include="Properties\Settings.settings">
