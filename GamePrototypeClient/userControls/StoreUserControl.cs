@@ -25,7 +25,15 @@ namespace GamePrototypeClient.userControls
         {
             using (var clientService = new GamePrototypeServiceClient())
             {
-                var allThings = clientService.
+                var allThings = clientService.GetAllThings();
+
+                foreach (var thing in allThings)
+                {
+                    var listItem = new ListViewItem();
+                    listItem.SubItems.
+
+                    ThingsList.Sub.Add(thing);
+                }
             }
         }
 
@@ -39,9 +47,5 @@ namespace GamePrototypeClient.userControls
             _chooseIndex = ThingsList.SelectedItems[0].Index;
         }
 
-        private void BuyBtn_Click(object sender, EventArgs e)
-        {
-            var boughtItem = ThingsList.Items[_chooseIndex];
-        }
     }
 }

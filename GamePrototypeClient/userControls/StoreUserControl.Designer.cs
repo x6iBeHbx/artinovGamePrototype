@@ -33,15 +33,24 @@
             this.BuyBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.BalanceLable = new System.Windows.Forms.Label();
+            this.ThingName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ThingDescription = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ThingCoins = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // ThingsList
             // 
+            this.ThingsList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ThingName,
+            this.ThingDescription,
+            this.ThingCoins});
+            this.ThingsList.GridLines = true;
             this.ThingsList.Location = new System.Drawing.Point(4, 4);
             this.ThingsList.Name = "ThingsList";
             this.ThingsList.Size = new System.Drawing.Size(418, 307);
             this.ThingsList.TabIndex = 0;
             this.ThingsList.UseCompatibleStateImageBehavior = false;
+            this.ThingsList.View = System.Windows.Forms.View.Details;
             // 
             // BackBtn
             // 
@@ -80,6 +89,20 @@
             this.BalanceLable.Text = "999";
             this.BalanceLable.Click += new System.EventHandler(this.BalanceLable_Click);
             // 
+            // ThingName
+            // 
+            this.ThingName.Text = "Name";
+            // 
+            // ThingDescription
+            // 
+            this.ThingDescription.Text = "Description";
+            this.ThingDescription.Width = 276;
+            // 
+            // ThingCoins
+            // 
+            this.ThingCoins.Text = "Price";
+            this.ThingCoins.Width = 76;
+            // 
             // StoreUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -103,5 +126,8 @@
         private System.Windows.Forms.Button BuyBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label BalanceLable;
+        private System.Windows.Forms.ColumnHeader ThingName;
+        private System.Windows.Forms.ColumnHeader ThingDescription;
+        private System.Windows.Forms.ColumnHeader ThingCoins;
     }
 }
