@@ -30,6 +30,9 @@ namespace GamePrototypeWcf
 
         [OperationContract]
         IQueryable<Things> GetAllThings();
+
+        [OperationContract]
+        IQueryable<CharacterThings> GetAllCharacterThings(Character character);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]
@@ -134,7 +137,10 @@ namespace GamePrototypeWcf
 
         [OperationContract]
         void SetThing(Things thing);
-        
+
+        [OperationContract]
+        void SetThingToCharacter(Things thing, CharacterWarehouse warehouse);
+
         #endregion
     }
 }

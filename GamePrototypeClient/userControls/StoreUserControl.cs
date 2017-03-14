@@ -56,5 +56,13 @@ namespace GamePrototypeClient.userControls
             Parent.Controls.Add(newScene);
             this.Dispose();
         }
+
+        private void BuyBtn_Click(object sender, EventArgs e)
+        {
+            using (var clientService = new GamePrototypeServiceClient())
+            {
+                
+            }
+        }
     }
 }

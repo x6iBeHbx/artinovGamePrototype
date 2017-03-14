@@ -7,6 +7,7 @@ using GamePrototypeClasses.core;
 using GamePrototypeClasses.enums;
 using GamePrototypeClasses.game.character;
 using GamePrototypeClasses.game.character.warehouse;
+using GamePrototypeClasses.game.thinks;
 using GamePrototypeDB.gameRepositories;
 
 namespace GamePrototypeLogic.gameSeverLogic

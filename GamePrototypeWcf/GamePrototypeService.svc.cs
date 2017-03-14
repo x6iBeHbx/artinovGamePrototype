@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.Text;
 using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.character.warehouse;
 using GamePrototypeClasses.game.thinks;
 using GamePrototypeClasses.user;
 using GamePrototypeLogic;
@@ -57,6 +58,11 @@ namespace GamePrototypeWcf
         public IQueryable<Things> GetAllThings()
         {
             return _serverLogicManager.ThingsServerLogic.GetAllThings();
+        }
+
+        public IQueryable<CharacterThings> GetAllCharacterThings(Character character)
+        {
+            return _serverLogicManager.CharacterThingsServerLogic.GetAllCharacterThings(character);
         }
 
         #endregion 

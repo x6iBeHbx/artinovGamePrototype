@@ -17,10 +17,12 @@ namespace GamePrototypeWcf
             UserProfileServerLogic = new UserProfileServerLogic();
             CharacterBaseBusinessLogic = new BaseBusinessLogic<Character>();
             ThingsServerLogic = new ThingsServerLogic();
+            CharacterThingsServerLogic = new CharacterThingsServerLogic();
         }
 
         public UserProfileServerLogic UserProfileServerLogic { get; protected set; }
         public BaseBusinessLogic<Character> CharacterBaseBusinessLogic { get; protected set; }
         public ThingsServerLogic ThingsServerLogic { get; protected set; }
+        public CharacterThingsServerLogic CharacterThingsServerLogic { get; set; }
     }
 }
