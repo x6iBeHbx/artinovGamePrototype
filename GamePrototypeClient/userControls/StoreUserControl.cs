@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.thinks;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
@@ -16,6 +17,7 @@ namespace GamePrototypeClient.userControls
     {
         private int _chooseIndex = -1;
         private Character _character;
+        private Things[] _things;
         public StoreUserControl(Character character)
         {
             InitializeComponent();
@@ -28,9 +30,9 @@ namespace GamePrototypeClient.userControls
         {
             using (var clientService = new GamePrototypeServiceClient())
             {
-                var allThings = clientService.GetAllThings();
+                _things = clientService.GetAllThings();
 
-                foreach (var thing in allThings)
+                foreach (var thing in _things)
                 {
                     ListViewItem item = new ListViewItem(thing.Name);
                     item.SubItems.Add("asd");
@@ -61,7 +63,16 @@ namespace GamePrototypeClient.userControls
         {
             using (var clientService = new GamePrototypeServiceClient())
             {
-                
+                if (_chooseIndex != -1)
+                {
+                    var warehouse = clientService.GetWarehouseById(_character.CharacterWarehouse.Id);
+                    clientService.SetThingToCharacter(_things[_chooseIndex], warehouse);
+                }
+                else
+                {
+                    MessageBox.Show("Choose thing for buy!!!");
+                }
+                    
             }
         }
     }

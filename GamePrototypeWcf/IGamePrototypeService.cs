@@ -33,6 +33,9 @@ namespace GamePrototypeWcf
 
         [OperationContract]
         IQueryable<CharacterThings> GetAllCharacterThings(Character character);
+
+        [OperationContract]
+        CharacterWarehouse GetWarehouseById(Guid id);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]

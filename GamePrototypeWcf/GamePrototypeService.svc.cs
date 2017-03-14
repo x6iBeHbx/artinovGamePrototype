@@ -36,6 +36,11 @@ namespace GamePrototypeWcf
             _serverLogicManager.ThingsServerLogic.SetThing(thing);
         }
 
+        public void SetThingToCharacter(Things thing, CharacterWarehouse warehouse)
+        {
+            _serverLogicManager.CharacterThingsServerLogic.SetThingToWarehouse(thing, warehouse);
+        }
+
         #endregion
 
         #region Getters
@@ -63,6 +68,11 @@ namespace GamePrototypeWcf
         public IQueryable<CharacterThings> GetAllCharacterThings(Character character)
         {
             return _serverLogicManager.CharacterThingsServerLogic.GetAllCharacterThings(character);
+        }
+
+        public CharacterWarehouse GetWarehouseById(Guid id)
+        {
+            return _serverLogicManager.WareBaseBusinessLogic.GetEntityById(id);
         }
 
         #endregion 

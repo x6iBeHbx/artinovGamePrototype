@@ -144,6 +144,8 @@
     <EmbeddedResource Include="userControls\StoreUserControl.resx">
       <DependentUpon>StoreUserControl.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="GamePrototypeClasses.game.character.warehouse.CharacterThings.datasource" />
+    <None Include="GamePrototypeClasses.game.character.warehouse.CharacterWarehouse.datasource" />
     <None Include="GamePrototypeClasses.game.thinks.Things.datasource" />
     <None Include="GamePrototypeClasses.user.UserProfile.datasource" />
     <None Include="Properties\Settings.settings">

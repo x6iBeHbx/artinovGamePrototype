@@ -39,6 +39,18 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllThingsResponse")]
         System.Threading.Tasks.Task<GamePrototypeClasses.game.thinks.Things[]> GetAllThingsAsync();
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllCharacterThingsResponse")]
+        GamePrototypeClasses.game.character.warehouse.CharacterThings[] GetAllCharacterThings(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllCharacterThingsResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterThings[]> GetAllCharacterThingsAsync(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse")]
+        GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouseById(System.Guid id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseByIdAsync(System.Guid id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetUserProfile", ReplyAction="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse")]
         void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile);
         
@@ -56,6 +68,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThing", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingResponse")]
         System.Threading.Tasks.Task SetThingAsync(GamePrototypeClasses.game.thinks.Things thing);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThingToCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingToCharacterResponse")]
+        void SetThingToCharacter(GamePrototypeClasses.game.thinks.Things thing, GamePrototypeClasses.game.character.warehouse.CharacterWarehouse warehouse);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThingToCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingToCharacterResponse")]
+        System.Threading.Tasks.Task SetThingToCharacterAsync(GamePrototypeClasses.game.thinks.Things thing, GamePrototypeClasses.game.character.warehouse.CharacterWarehouse warehouse);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -117,6 +135,22 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
             return base.Channel.GetAllThingsAsync();
         }
         
+        public GamePrototypeClasses.game.character.warehouse.CharacterThings[] GetAllCharacterThings(GamePrototypeClasses.game.character.Character character) {
+            return base.Channel.GetAllCharacterThings(character);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterThings[]> GetAllCharacterThingsAsync(GamePrototypeClasses.game.character.Character character) {
+            return base.Channel.GetAllCharacterThingsAsync(character);
+        }
+        
+        public GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouseById(System.Guid id) {
+            return base.Channel.GetWarehouseById(id);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseByIdAsync(System.Guid id) {
+            return base.Channel.GetWarehouseByIdAsync(id);
+        }
+        
         public void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile) {
             base.Channel.SetUserProfile(userProfile);
         }
@@ -139,6 +173,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public System.Threading.Tasks.Task SetThingAsync(GamePrototypeClasses.game.thinks.Things thing) {
             return base.Channel.SetThingAsync(thing);
+        }
+        
+        public void SetThingToCharacter(GamePrototypeClasses.game.thinks.Things thing, GamePrototypeClasses.game.character.warehouse.CharacterWarehouse warehouse) {
+            base.Channel.SetThingToCharacter(thing, warehouse);
+        }
+        
+        public System.Threading.Tasks.Task SetThingToCharacterAsync(GamePrototypeClasses.game.thinks.Things thing, GamePrototypeClasses.game.character.warehouse.CharacterWarehouse warehouse) {
+            return base.Channel.SetThingToCharacterAsync(thing, warehouse);
         }
     }
 }

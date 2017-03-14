@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using GamePrototypeClasses.core;
 using GamePrototypeClasses.game.character;
+using GamePrototypeClasses.game.character.warehouse;
 using GamePrototypeLogic;
 using GamePrototypeLogic.gameSeverLogic;
 
@@ -22,6 +23,7 @@ namespace GamePrototypeWcf
 
         public UserProfileServerLogic UserProfileServerLogic { get; protected set; }
         public BaseBusinessLogic<Character> CharacterBaseBusinessLogic { get; protected set; }
+        public BaseBusinessLogic<CharacterWarehouse> WareBaseBusinessLogic { get; protected set; }
         public ThingsServerLogic ThingsServerLogic { get; protected set; }
         public CharacterThingsServerLogic CharacterThingsServerLogic { get; set; }
     }
