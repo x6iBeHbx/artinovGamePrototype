@@ -43,5 +43,12 @@ namespace GamePrototypeClient.userControls
             Parent.Controls.Add(userInfoScreen);
             this.Dispose();
         }
+
+        private void StoreBtn_Click(object sender, EventArgs e)
+        {
+            var newScene = new StoreUserControl(_characte);
+            Parent.Controls.Add(newScene);
+            this.Dispose();
+        }
     }
 }

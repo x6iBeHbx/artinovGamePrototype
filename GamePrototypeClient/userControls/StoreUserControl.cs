@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GamePrototypeClasses.game.character;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
@@ -14,10 +15,12 @@ namespace GamePrototypeClient.userControls
     public partial class StoreUserControl : UserControl
     {
         private int _chooseIndex = -1;
-        public StoreUserControl()
+        private Character _character;
+        public StoreUserControl(Character character)
         {
             InitializeComponent();
             InitData();
+            _character = character;
             ThingsList.MultiSelect = false;
         }
 
@@ -29,10 +32,10 @@ namespace GamePrototypeClient.userControls
 
                 foreach (var thing in allThings)
                 {
-                    var listItem = new ListViewItem();
-                    listItem.SubItems.
-
-                    ThingsList.Sub.Add(thing);
+                    ListViewItem item = new ListViewItem(thing.Name);
+                    item.SubItems.Add("asd");
+                    item.SubItems.Add(thing.Coins.ToString());
+                    ThingsList.Items.Add(item);
                 }
             }
         }
@@ -47,5 +50,11 @@ namespace GamePrototypeClient.userControls
             _chooseIndex = ThingsList.SelectedItems[0].Index;
         }
 
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            var newScene = new MainGameScene(_character);
+            Parent.Controls.Add(newScene);
+            this.Dispose();
+        }
     }
 }

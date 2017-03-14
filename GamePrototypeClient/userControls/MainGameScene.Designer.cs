@@ -117,6 +117,7 @@
             this.StoreBtn.TabIndex = 12;
             this.StoreBtn.Text = "Store";
             this.StoreBtn.UseVisualStyleBackColor = true;
+            this.StoreBtn.Click += new System.EventHandler(this.StoreBtn_Click);
             // 
             // CharacterCoins
             // 

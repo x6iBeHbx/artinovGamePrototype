@@ -45,27 +45,29 @@
             this.ThingDescription,
             this.ThingCoins});
             this.ThingsList.GridLines = true;
-            this.ThingsList.Location = new System.Drawing.Point(4, 4);
+            this.ThingsList.Location = new System.Drawing.Point(4, 10);
             this.ThingsList.Name = "ThingsList";
-            this.ThingsList.Size = new System.Drawing.Size(418, 307);
+            this.ThingsList.Size = new System.Drawing.Size(455, 296);
             this.ThingsList.TabIndex = 0;
             this.ThingsList.UseCompatibleStateImageBehavior = false;
             this.ThingsList.View = System.Windows.Forms.View.Details;
+            this.ThingsList.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ThingsList_MouseClick);
             // 
             // BackBtn
             // 
-            this.BackBtn.Location = new System.Drawing.Point(465, 288);
+            this.BackBtn.Location = new System.Drawing.Point(465, 284);
             this.BackBtn.Name = "BackBtn";
-            this.BackBtn.Size = new System.Drawing.Size(75, 23);
+            this.BackBtn.Size = new System.Drawing.Size(75, 22);
             this.BackBtn.TabIndex = 1;
             this.BackBtn.Text = "Back";
             this.BackBtn.UseVisualStyleBackColor = true;
+            this.BackBtn.Click += new System.EventHandler(this.BackBtn_Click);
             // 
             // BuyBtn
             // 
-            this.BuyBtn.Location = new System.Drawing.Point(465, 230);
+            this.BuyBtn.Location = new System.Drawing.Point(468, 66);
             this.BuyBtn.Name = "BuyBtn";
-            this.BuyBtn.Size = new System.Drawing.Size(75, 23);
+            this.BuyBtn.Size = new System.Drawing.Size(46, 27);
             this.BuyBtn.TabIndex = 2;
             this.BuyBtn.Text = "Buy";
             this.BuyBtn.UseVisualStyleBackColor = true;
@@ -73,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(465, 14);
+            this.label1.Location = new System.Drawing.Point(465, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 3;
@@ -82,7 +84,7 @@
             // BalanceLable
             // 
             this.BalanceLable.AutoSize = true;
-            this.BalanceLable.Location = new System.Drawing.Point(468, 31);
+            this.BalanceLable.Location = new System.Drawing.Point(468, 37);
             this.BalanceLable.Name = "BalanceLable";
             this.BalanceLable.Size = new System.Drawing.Size(25, 13);
             this.BalanceLable.TabIndex = 4;

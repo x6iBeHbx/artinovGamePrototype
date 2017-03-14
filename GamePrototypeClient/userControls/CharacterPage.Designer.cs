@@ -60,7 +60,6 @@
             this.CharacterMana = new System.Windows.Forms.Label();
             this.CharacterHealth = new System.Windows.Forms.Label();
             this.ToMainScene = new System.Windows.Forms.Button();
-            this.ToStoreBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CharaterImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterHemletImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CharacterNeackleImg)).BeginInit();
@@ -372,21 +371,11 @@
             this.ToMainScene.UseVisualStyleBackColor = true;
             this.ToMainScene.Click += new System.EventHandler(this.ToMainScene_Click);
             // 
-            // ToStoreBtn
-            // 
-            this.ToStoreBtn.Location = new System.Drawing.Point(498, 328);
-            this.ToStoreBtn.Name = "ToStoreBtn";
-            this.ToStoreBtn.Size = new System.Drawing.Size(75, 23);
-            this.ToStoreBtn.TabIndex = 33;
-            this.ToStoreBtn.Text = "Store";
-            this.ToStoreBtn.UseVisualStyleBackColor = true;
-            // 
             // CharacterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.Controls.Add(this.ToStoreBtn);
             this.Controls.Add(this.ToMainScene);
             this.Controls.Add(this.CharacterIntellgence);
             this.Controls.Add(this.CharacterAgility);
@@ -476,6 +465,5 @@
         private System.Windows.Forms.Label CharacterMana;
         private System.Windows.Forms.Label CharacterHealth;
         private System.Windows.Forms.Button ToMainScene;
-        private System.Windows.Forms.Button ToStoreBtn;
     }
 }
