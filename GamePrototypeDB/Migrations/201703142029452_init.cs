@@ -120,10 +120,10 @@ namespace GamePrototypeDB.Migrations
                         Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
-                        SpecialThingBonus_Id = c.Guid(nullable: false),
+                        SpecialThingBonus_Id = c.Guid(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id, cascadeDelete: true)
+                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id)
                 .Index(t => t.SpecialThingBonus_Id);
             
             CreateTable(
@@ -156,10 +156,10 @@ namespace GamePrototypeDB.Migrations
                         Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
-                        SpecialThingBonus_Id = c.Guid(nullable: false),
+                        SpecialThingBonus_Id = c.Guid(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id, cascadeDelete: true)
+                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id)
                 .Index(t => t.SpecialThingBonus_Id);
             
             CreateTable(
@@ -180,10 +180,10 @@ namespace GamePrototypeDB.Migrations
                         Coins = c.Int(nullable: false),
                         Level = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 300),
-                        SpecialThingBonus_Id = c.Guid(nullable: false),
+                        SpecialThingBonus_Id = c.Guid(),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id, cascadeDelete: true)
+                .ForeignKey("dbo.SpecialThingBonus", t => t.SpecialThingBonus_Id)
                 .Index(t => t.SpecialThingBonus_Id);
             
             CreateTable(

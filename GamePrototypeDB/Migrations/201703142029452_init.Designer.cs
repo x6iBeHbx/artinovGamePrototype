@@ -7,13 +7,13 @@ namespace GamePrototypeDB.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class specailbonustonotRequired : IMigrationMetadata
+    public sealed partial class init : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(specailbonustonotRequired));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(init));
         
         string IMigrationMetadata.Id
         {
-            get { return "201703141008565_specail-bonus-to-notRequired"; }
+            get { return "201703142029452_init"; }
         }
         
         string IMigrationMetadata.Source

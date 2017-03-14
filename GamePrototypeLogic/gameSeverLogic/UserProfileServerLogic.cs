@@ -13,7 +13,7 @@ namespace GamePrototypeLogic.gameSeverLogic
     {
         private readonly UserRepository _userRepository = new UserRepository();
 
-        public IEnumerable<UserProfile> GetAllUsers()
+        public IQueryable<UserProfile> GetAllUsers()
         {
             return _userRepository.GetAll();
         }

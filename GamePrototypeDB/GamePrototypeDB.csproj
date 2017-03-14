@@ -60,13 +60,9 @@
     <Compile Include="gameRepositories\CharacterRepository.cs" />
     <Compile Include="gameRepositories\ThingsRepository.cs" />
     <Compile Include="gameRepositories\UserRepository.cs" />
-    <Compile Include="Migrations\201703122123087_init.cs" />
-    <Compile Include="Migrations\201703122123087_init.Designer.cs">
-      <DependentUpon>201703122123087_init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201703141008565_specail-bonus-to-notRequired.cs" />
-    <Compile Include="Migrations\201703141008565_specail-bonus-to-notRequired.Designer.cs">
-      <DependentUpon>201703141008565_specail-bonus-to-notRequired.cs</DependentUpon>
+    <Compile Include="Migrations\201703142029452_init.cs" />
+    <Compile Include="Migrations\201703142029452_init.Designer.cs">
+      <DependentUpon>201703142029452_init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,11 +79,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703122123087_init.resx">
-      <DependentUpon>201703122123087_init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703141008565_specail-bonus-to-notRequired.resx">
-      <DependentUpon>201703141008565_specail-bonus-to-notRequired.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703142029452_init.resx">
+      <DependentUpon>201703142029452_init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
