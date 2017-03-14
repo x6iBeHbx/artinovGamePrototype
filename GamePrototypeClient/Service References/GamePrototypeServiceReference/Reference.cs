@@ -33,6 +33,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid", ReplyAction="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValidResponse")]
         System.Threading.Tasks.Task<bool> IsUserLoginDataValidAsync(string login, string pass);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllThingsResponse")]
+        GamePrototypeClasses.game.thinks.Things[] GetAllThings();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllThingsResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.game.thinks.Things[]> GetAllThingsAsync();
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetUserProfile", ReplyAction="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse")]
         void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile);
         
@@ -101,6 +107,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public System.Threading.Tasks.Task<bool> IsUserLoginDataValidAsync(string login, string pass) {
             return base.Channel.IsUserLoginDataValidAsync(login, pass);
+        }
+        
+        public GamePrototypeClasses.game.thinks.Things[] GetAllThings() {
+            return base.Channel.GetAllThings();
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.game.thinks.Things[]> GetAllThingsAsync() {
+            return base.Channel.GetAllThingsAsync();
         }
         
         public void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile) {

@@ -38,4 +38,10 @@
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="Scrolls" nillable="true" type="tns:Scrolls" />
+  <xs:complexType name="ArrayOfThings">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Things" nillable="true" type="tns:Things" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfThings" nillable="true" type="tns:ArrayOfThings" />
 </xs:schema>

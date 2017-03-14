@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" />
-  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" />
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" />
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" />
   <xs:element name="GetUserByLogin">
     <xs:complexType>
       <xs:sequence>
@@ -46,10 +46,22 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetAllThings">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllThingsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="GetAllThingsResult" nillable="true" type="q3:ArrayOfThings" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="SetUserProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" minOccurs="0" name="userProfile" nillable="true" type="q3:UserProfile" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" minOccurs="0" name="userProfile" nillable="true" type="q4:UserProfile" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -61,7 +73,7 @@
   <xs:element name="SetCharacter">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q4:Character" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q5:Character" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -73,7 +85,7 @@
   <xs:element name="SetThing">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q5:Things" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q6:Things" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

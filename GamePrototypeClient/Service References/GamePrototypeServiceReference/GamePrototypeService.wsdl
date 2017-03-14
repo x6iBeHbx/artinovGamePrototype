@@ -30,6 +30,12 @@
   <wsdl:message name="IGamePrototypeService_IsUserLoginDataValid_OutputMessage">
     <wsdl:part name="parameters" element="tns:IsUserLoginDataValidResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetAllThings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllThings" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetAllThings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllThingsResponse" />
+  </wsdl:message>
   <wsdl:message name="IGamePrototypeService_SetUserProfile_InputMessage">
     <wsdl:part name="parameters" element="tns:SetUserProfile" />
   </wsdl:message>
@@ -60,6 +66,10 @@
     <wsdl:operation name="IsUserLoginDataValid">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid" message="tns:IGamePrototypeService_IsUserLoginDataValid_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValidResponse" message="tns:IGamePrototypeService_IsUserLoginDataValid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllThings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllThings" message="tns:IGamePrototypeService_GetAllThings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllThingsResponse" message="tns:IGamePrototypeService_GetAllThings_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetUserProfile">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfile" message="tns:IGamePrototypeService_SetUserProfile_InputMessage" />
@@ -96,6 +106,15 @@
     </wsdl:operation>
     <wsdl:operation name="IsUserLoginDataValid">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/IsUserLoginDataValid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllThings">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetAllThings" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
