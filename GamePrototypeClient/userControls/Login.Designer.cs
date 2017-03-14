@@ -65,6 +65,7 @@
             this.PasswordLable.Location = new System.Drawing.Point(253, 137);
             this.PasswordLable.MaxLength = 500;
             this.PasswordLable.Name = "PasswordLable";
+            this.PasswordLable.PasswordChar = '*';
             this.PasswordLable.Size = new System.Drawing.Size(221, 20);
             this.PasswordLable.TabIndex = 2;
             this.PasswordLable.Text = "Password";

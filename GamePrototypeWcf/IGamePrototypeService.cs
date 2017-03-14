@@ -35,6 +35,9 @@ namespace GamePrototypeWcf
         IQueryable<CharacterThings> GetAllCharacterThings(Character character);
 
         [OperationContract]
+        Character GetCharacterById(Guid id);
+
+        [OperationContract]
         CharacterWarehouse GetWarehouseById(Guid id);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
@@ -137,6 +140,9 @@ namespace GamePrototypeWcf
         ////character
         [OperationContract]
         void SetCharacter(Character character);
+
+        [OperationContract]
+        void UpdateCharacter(Character character);
 
         [OperationContract]
         void SetThing(Things thing);

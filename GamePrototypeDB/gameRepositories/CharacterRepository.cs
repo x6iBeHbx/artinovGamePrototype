@@ -16,5 +16,11 @@ namespace GamePrototypeDB.gameRepositories
                 .Include(x => x.CharacterWarehouse)
                 .Include(x => x.CharacterEquipment);
         }
+
+        public override Character GetById(Guid id)
+        {
+            return GetAll().FirstOrDefault(x => x.Id.Equals(id));
+        }
     }
 }
+

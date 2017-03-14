@@ -42,6 +42,12 @@
   <wsdl:message name="IGamePrototypeService_GetAllCharacterThings_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllCharacterThingsResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetCharacterById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCharacterById" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetCharacterById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCharacterByIdResponse" />
+  </wsdl:message>
   <wsdl:message name="IGamePrototypeService_GetWarehouseById_InputMessage">
     <wsdl:part name="parameters" element="tns:GetWarehouseById" />
   </wsdl:message>
@@ -59,6 +65,12 @@
   </wsdl:message>
   <wsdl:message name="IGamePrototypeService_SetCharacter_OutputMessage">
     <wsdl:part name="parameters" element="tns:SetCharacterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_UpdateCharacter_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCharacter" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_UpdateCharacter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCharacterResponse" />
   </wsdl:message>
   <wsdl:message name="IGamePrototypeService_SetThing_InputMessage">
     <wsdl:part name="parameters" element="tns:SetThing" />
@@ -93,6 +105,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings" message="tns:IGamePrototypeService_GetAllCharacterThings_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThingsResponse" message="tns:IGamePrototypeService_GetAllCharacterThings_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="GetCharacterById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetCharacterById" message="tns:IGamePrototypeService_GetCharacterById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetCharacterByIdResponse" message="tns:IGamePrototypeService_GetCharacterById_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetWarehouseById">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById" message="tns:IGamePrototypeService_GetWarehouseById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse" message="tns:IGamePrototypeService_GetWarehouseById_OutputMessage" />
@@ -104,6 +120,10 @@
     <wsdl:operation name="SetCharacter">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacter" message="tns:IGamePrototypeService_SetCharacter_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/SetCharacterResponse" message="tns:IGamePrototypeService_SetCharacter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCharacter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/UpdateCharacter" message="tns:IGamePrototypeService_UpdateCharacter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/UpdateCharacterResponse" message="tns:IGamePrototypeService_UpdateCharacter_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetThing">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetThing" message="tns:IGamePrototypeService_SetThing_InputMessage" />
@@ -161,6 +181,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="GetCharacterById">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetCharacterById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetWarehouseById">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetWarehouseById" style="document" />
       <wsdl:input>
@@ -181,6 +210,15 @@
     </wsdl:operation>
     <wsdl:operation name="SetCharacter">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/SetCharacter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCharacter">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/UpdateCharacter" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

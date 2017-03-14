@@ -31,7 +31,7 @@ namespace GamePrototypeLogic
             return Repository.GetAll();
         }
 
-        public T GetEntityById(Guid id)
+        public virtual T GetEntityById(Guid id)
         {
             return Repository.GetById(id);
         }

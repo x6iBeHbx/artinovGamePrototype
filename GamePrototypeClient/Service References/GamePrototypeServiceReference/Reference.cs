@@ -45,6 +45,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings", ReplyAction="http://tempuri.org/IGamePrototypeService/GetAllCharacterThingsResponse")]
         System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterThings[]> GetAllCharacterThingsAsync(GamePrototypeClasses.game.character.Character character);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetCharacterById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetCharacterByIdResponse")]
+        GamePrototypeClasses.game.character.Character GetCharacterById(System.Guid id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetCharacterById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetCharacterByIdResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.game.character.Character> GetCharacterByIdAsync(System.Guid id);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse")]
         GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouseById(System.Guid id);
         
@@ -62,6 +68,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/SetCharacterResponse")]
         System.Threading.Tasks.Task SetCharacterAsync(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/UpdateCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/UpdateCharacterResponse")]
+        void UpdateCharacter(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/UpdateCharacter", ReplyAction="http://tempuri.org/IGamePrototypeService/UpdateCharacterResponse")]
+        System.Threading.Tasks.Task UpdateCharacterAsync(GamePrototypeClasses.game.character.Character character);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetThing", ReplyAction="http://tempuri.org/IGamePrototypeService/SetThingResponse")]
         void SetThing(GamePrototypeClasses.game.thinks.Things thing);
@@ -143,6 +155,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
             return base.Channel.GetAllCharacterThingsAsync(character);
         }
         
+        public GamePrototypeClasses.game.character.Character GetCharacterById(System.Guid id) {
+            return base.Channel.GetCharacterById(id);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.game.character.Character> GetCharacterByIdAsync(System.Guid id) {
+            return base.Channel.GetCharacterByIdAsync(id);
+        }
+        
         public GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouseById(System.Guid id) {
             return base.Channel.GetWarehouseById(id);
         }
@@ -165,6 +185,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public System.Threading.Tasks.Task SetCharacterAsync(GamePrototypeClasses.game.character.Character character) {
             return base.Channel.SetCharacterAsync(character);
+        }
+        
+        public void UpdateCharacter(GamePrototypeClasses.game.character.Character character) {
+            base.Channel.UpdateCharacter(character);
+        }
+        
+        public System.Threading.Tasks.Task UpdateCharacterAsync(GamePrototypeClasses.game.character.Character character) {
+            return base.Channel.UpdateCharacterAsync(character);
         }
         
         public void SetThing(GamePrototypeClasses.game.thinks.Things thing) {

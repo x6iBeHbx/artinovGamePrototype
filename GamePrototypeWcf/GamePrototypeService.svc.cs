@@ -41,6 +41,11 @@ namespace GamePrototypeWcf
             _serverLogicManager.CharacterThingsServerLogic.SetThingToWarehouse(thing, warehouse);
         }
 
+        public void UpdateCharacter(Character character)
+        {
+            _serverLogicManager.CharacterBaseBusinessLogic.UpdateEntity(character);
+        }
+
         #endregion
 
         #region Getters
@@ -73,6 +78,11 @@ namespace GamePrototypeWcf
         public CharacterWarehouse GetWarehouseById(Guid id)
         {
             return _serverLogicManager.WareBaseBusinessLogic.GetEntityById(id);
+        }
+
+        public Character GetCharacterById(Guid id)
+        {
+            return _serverLogicManager.CharacterBaseBusinessLogic.GetEntityById(id);
         }
 
         #endregion 

@@ -12,7 +12,7 @@ using GamePrototypeDB.gameRepositories;
 
 namespace GamePrototypeLogic.gameSeverLogic
 {
-    class CharacterServerLogic : BaseBusinessLogic<Character>
+    public class CharacterServerLogic : BaseBusinessLogic<Character>
     {
         private readonly CharacterRepository _characterRepository = new CharacterRepository();
         private readonly CharacterThingsServerLogic _characterThingsServerLogic = new CharacterThingsServerLogic();
@@ -28,6 +28,12 @@ namespace GamePrototypeLogic.gameSeverLogic
         {
             return _characterRepository.GetAll().Where(x => x.CharacterType.Equals(type));
         }
+
+        public override Character GetEntityById(Guid id)
+        {
+            return _characterRepository.GetById(id);
+        }
+
         public Character GetCharacterByNickName(string name)
         {
             return _characterRepository.GetAll().FirstOrDefault(x => x.Name.Equals(name));
