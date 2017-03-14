@@ -102,10 +102,24 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="GetWarehouse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q10:Character" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetWarehouseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" minOccurs="0" name="GetWarehouseResult" nillable="true" type="q11:CharacterWarehouse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="SetUserProfile">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" minOccurs="0" name="userProfile" nillable="true" type="q10:UserProfile" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.user" minOccurs="0" name="userProfile" nillable="true" type="q12:UserProfile" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -117,7 +131,7 @@
   <xs:element name="SetCharacter">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q11:Character" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q13:Character" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -129,7 +143,7 @@
   <xs:element name="UpdateCharacter">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q12:Character" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character" minOccurs="0" name="character" nillable="true" type="q14:Character" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -141,7 +155,7 @@
   <xs:element name="SetThing">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q13:Things" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q15:Things" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -153,8 +167,8 @@
   <xs:element name="SetThingToCharacter">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q14:Things" />
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" minOccurs="0" name="warehouse" nillable="true" type="q15:CharacterWarehouse" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="thing" nillable="true" type="q16:Things" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" minOccurs="0" name="warehouse" nillable="true" type="q17:CharacterWarehouse" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

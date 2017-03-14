@@ -15,5 +15,6 @@ namespace GamePrototypeDB.gameRepositories
             return Context.UserProfile
                 .Include(x => x.UserCharacter);
         }
+
     }
 }

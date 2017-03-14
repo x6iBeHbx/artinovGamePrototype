@@ -39,6 +39,8 @@ namespace GamePrototypeWcf
 
         [OperationContract]
         CharacterWarehouse GetWarehouseById(Guid id);
+        [OperationContract]
+        CharacterWarehouse GetWarehouse(Character character);
         //[OperationContract]
         //UserProfile GetUSerByPhone(string phone);
         //[OperationContract]

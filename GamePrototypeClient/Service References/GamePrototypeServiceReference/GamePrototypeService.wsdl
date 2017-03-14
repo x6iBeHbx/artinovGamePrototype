@@ -54,6 +54,12 @@
   <wsdl:message name="IGamePrototypeService_GetWarehouseById_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetWarehouseByIdResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetWarehouse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouse" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetWarehouse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWarehouseResponse" />
+  </wsdl:message>
   <wsdl:message name="IGamePrototypeService_SetUserProfile_InputMessage">
     <wsdl:part name="parameters" element="tns:SetUserProfile" />
   </wsdl:message>
@@ -112,6 +118,10 @@
     <wsdl:operation name="GetWarehouseById">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById" message="tns:IGamePrototypeService_GetWarehouseById_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse" message="tns:IGamePrototypeService_GetWarehouseById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouse" message="tns:IGamePrototypeService_GetWarehouse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetWarehouseResponse" message="tns:IGamePrototypeService_GetWarehouse_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetUserProfile">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/SetUserProfile" message="tns:IGamePrototypeService_SetUserProfile_InputMessage" />
@@ -192,6 +202,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetWarehouseById">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetWarehouseById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWarehouse">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetWarehouse" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

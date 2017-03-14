@@ -29,6 +29,11 @@ namespace GamePrototypeLogic.gameSeverLogic
             return _characterRepository.GetAll().Where(x => x.CharacterType.Equals(type));
         }
 
+        public CharacterWarehouse GetWarehouse(Character character)
+        {
+            return _characterRepository.GetWarehouse(character);
+        }
+
         public override Character GetEntityById(Guid id)
         {
             return _characterRepository.GetById(id);

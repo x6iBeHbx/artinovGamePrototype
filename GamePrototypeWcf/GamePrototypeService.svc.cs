@@ -80,6 +80,11 @@ namespace GamePrototypeWcf
             return _serverLogicManager.WareBaseBusinessLogic.GetEntityById(id);
         }
 
+        public CharacterWarehouse GetWarehouse(Character character)
+        {
+            return _serverLogicManager.CharacterBaseBusinessLogic.GetWarehouse(character);
+        }
+
         public Character GetCharacterById(Guid id)
         {
             return _serverLogicManager.CharacterBaseBusinessLogic.GetEntityById(id);

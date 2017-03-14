@@ -57,6 +57,12 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouseById", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseByIdResponse")]
         System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseByIdAsync(System.Guid id);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouse", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseResponse")]
+        GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouse(GamePrototypeClasses.game.character.Character character);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/GetWarehouse", ReplyAction="http://tempuri.org/IGamePrototypeService/GetWarehouseResponse")]
+        System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseAsync(GamePrototypeClasses.game.character.Character character);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IGamePrototypeService/SetUserProfile", ReplyAction="http://tempuri.org/IGamePrototypeService/SetUserProfileResponse")]
         void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile);
         
@@ -169,6 +175,14 @@ namespace GamePrototypeClient.GamePrototypeServiceReference {
         
         public System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseByIdAsync(System.Guid id) {
             return base.Channel.GetWarehouseByIdAsync(id);
+        }
+        
+        public GamePrototypeClasses.game.character.warehouse.CharacterWarehouse GetWarehouse(GamePrototypeClasses.game.character.Character character) {
+            return base.Channel.GetWarehouse(character);
+        }
+        
+        public System.Threading.Tasks.Task<GamePrototypeClasses.game.character.warehouse.CharacterWarehouse> GetWarehouseAsync(GamePrototypeClasses.game.character.Character character) {
+            return base.Channel.GetWarehouseAsync(character);
         }
         
         public void SetUserProfile(GamePrototypeClasses.user.UserProfile userProfile) {
