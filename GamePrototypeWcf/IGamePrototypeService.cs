@@ -33,7 +33,8 @@ namespace GamePrototypeWcf
 
         [OperationContract]
         IQueryable<CharacterThings> GetAllCharacterThings(Character character);
-
+        [OperationContract]
+        Things GetThingById(Guid id);
         [OperationContract]
         Character GetCharacterById(Guid id);
 

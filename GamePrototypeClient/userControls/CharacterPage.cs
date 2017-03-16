@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.game.character;
+using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
 {
@@ -20,6 +20,30 @@ namespace GamePrototypeClient.userControls
             Image image = Image.FromFile(character.ImageUrl);
             CharaterImg.Image = image;
             _character = character;
+
+            initData();
+        }
+
+        private void initData()
+        {
+            using (var clientService = new GamePrototypeServiceClient())
+            {
+                var allCharacterThings = clientService.GetAllCharacterThings(_character);
+
+                foreach (var characterThing in allCharacterThings)
+                {
+                    var thing = clientService.GetThingById(characterThing.ThingId);
+                    var ListViewItem = new ListViewItem(thing.Name);
+                    //TODO need add description
+                    ListViewItem.SubItems.Add(thing.Defense.ToString());
+                    ListViewItem.SubItems.Add(thing.Coins.ToString());
+                    WarehouseList.Items.Add(ListViewItem);
+                }
+            }
+
+            CharacterAgility.Text += _character.Agility.ToString();
+            CharacterHealth.Text += _character.Health.ToString();
+            CharacterMana.Text += _character.Mana.ToString();
         }
 
         private void ToMainScene_Click(object sender, EventArgs e)

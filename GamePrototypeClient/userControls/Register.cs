@@ -8,10 +8,6 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.enums;
-using GamePrototypeClasses.game.character;
-using GamePrototypeClasses.game.character.warehouse;
-using GamePrototypeClasses.user;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
@@ -114,6 +110,10 @@ namespace GamePrototypeClient.userControls
 
             _character.Level = 1;
 
+            _character.Id = Guid.NewGuid();
+            _character.CharacterWarehouse.Id = Guid.NewGuid();
+            _character.CharacterWarehouse.Id = Guid.NewGuid();
+
             return _character;
         }
 
@@ -129,6 +129,7 @@ namespace GamePrototypeClient.userControls
             userProfile.Age = Int32.Parse(AgeBox.Text);
             userProfile.UserSex = (UserSexEnum)((SexComboBox.SelectedIndex == -1) ? SexComboBox.Items[0] : SexComboBox.Items[SexComboBox.SelectedIndex]);
 
+            userProfile.Id = Guid.NewGuid();
             userProfile.UserCharacter = CreateUserCharacter();
 
             return userProfile;

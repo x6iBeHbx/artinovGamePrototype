@@ -42,6 +42,12 @@
   <wsdl:message name="IGamePrototypeService_GetAllCharacterThings_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetAllCharacterThingsResponse" />
   </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetThingById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetThingById" />
+  </wsdl:message>
+  <wsdl:message name="IGamePrototypeService_GetThingById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetThingByIdResponse" />
+  </wsdl:message>
   <wsdl:message name="IGamePrototypeService_GetCharacterById_InputMessage">
     <wsdl:part name="parameters" element="tns:GetCharacterById" />
   </wsdl:message>
@@ -110,6 +116,10 @@
     <wsdl:operation name="GetAllCharacterThings">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings" message="tns:IGamePrototypeService_GetAllCharacterThings_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetAllCharacterThingsResponse" message="tns:IGamePrototypeService_GetAllCharacterThings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThingById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetThingById" message="tns:IGamePrototypeService_GetThingById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGamePrototypeService/GetThingByIdResponse" message="tns:IGamePrototypeService_GetThingById_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetCharacterById">
       <wsdl:input wsaw:Action="http://tempuri.org/IGamePrototypeService/GetCharacterById" message="tns:IGamePrototypeService_GetCharacterById_InputMessage" />
@@ -184,6 +194,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetAllCharacterThings">
       <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetAllCharacterThings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThingById">
+      <soap:operation soapAction="http://tempuri.org/IGamePrototypeService/GetThingById" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

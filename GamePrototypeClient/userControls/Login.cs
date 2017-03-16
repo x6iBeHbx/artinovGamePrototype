@@ -35,8 +35,9 @@ namespace GamePrototypeClient.userControls
             {
                 if (clientService.IsUserLoginDataValid(login, password))
                 {
-                    var character = clientService.GetUserByLogin(login).UserCharacter;
-                    var aaa = clientService.GetWarehouse(character);
+                    //var character = clientService.GetUserByLogin(login).UserCharacter;
+                    UserProfile user = clientService.GetUserByLogin(login);
+                    var character = clientService.GetCharacterById(user.UserCharacter.Id);
                     Close();
                     _loginDelegate(new MainGameScene(character));
                 }

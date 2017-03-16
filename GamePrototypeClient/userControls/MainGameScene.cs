@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.game.character;
-using GamePrototypeClasses.user;
+using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
 {

@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.core;
-using GamePrototypeClasses.enums;
-using GamePrototypeClasses.game.thinks;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.gameForms.adminUserControls
@@ -66,6 +63,8 @@ namespace GamePrototypeClient.gameForms.adminUserControls
                 thing.Intelligence = Int32.Parse(IntelligenceTextBox.Text);
                 thing.Coins = Int32.Parse(CoinsBox.Text);
                 thing.ImageUrl = ImageBox.ImageLocation;
+
+                thing.Id = Guid.NewGuid();
 
                 thing.ThingsType = (ThingsTypeEnum) Enum.Parse(typeof(ThingsTypeEnum), ThingTypeComboBox.SelectedItem.ToString()) ;
 

@@ -94,19 +94,22 @@
             this.WarehouseList.Size = new System.Drawing.Size(361, 287);
             this.WarehouseList.TabIndex = 0;
             this.WarehouseList.UseCompatibleStateImageBehavior = false;
-            this.WarehouseList.View = System.Windows.Forms.View.List;
+            this.WarehouseList.View = System.Windows.Forms.View.Details;
             // 
             // ItemId
             // 
             this.ItemId.Text = "#";
+            this.ItemId.Width = 47;
             // 
             // ThingName
             // 
             this.ThingName.Text = "Name";
+            this.ThingName.Width = 230;
             // 
             // ThingPrice
             // 
             this.ThingPrice.Text = "Price";
+            this.ThingPrice.Width = 56;
             // 
             // CharaterImg
             // 

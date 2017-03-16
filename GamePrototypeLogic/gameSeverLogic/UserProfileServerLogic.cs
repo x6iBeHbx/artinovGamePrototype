@@ -15,12 +15,13 @@ namespace GamePrototypeLogic.gameSeverLogic
 
         public IQueryable<UserProfile> GetAllUsers()
         {
+            var eee = _userRepository.GetAll();
             return _userRepository.GetAll();
         }
 
         public UserProfile GetUserByLogin(string login)
         {
-            return GetAllUsers().FirstOrDefault(x => x.Login.Equals(login));
+            return _userRepository.GetUserByLogin(login);
         }
 
         public UserProfile GetUserByEmail(string email)

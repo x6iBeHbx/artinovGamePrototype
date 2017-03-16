@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" />
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.enums" />
   <xs:complexType name="NameEntity">
@@ -13,7 +14,9 @@
   </xs:complexType>
   <xs:element name="NameEntity" nillable="true" type="tns:NameEntity" />
   <xs:complexType name="IdEntity">
-    <xs:sequence />
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+    </xs:sequence>
   </xs:complexType>
   <xs:element name="IdEntity" nillable="true" type="tns:IdEntity" />
   <xs:complexType name="MainOptionsEntity">

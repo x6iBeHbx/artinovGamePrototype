@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.enums;
-using GamePrototypeClasses.game.character;
-using GamePrototypeClasses.game.character.warehouse;
-using GamePrototypeClasses.user;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient

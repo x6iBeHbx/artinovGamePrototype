@@ -13,15 +13,16 @@ namespace GamePrototypeLogic.gameSeverLogic
     {
         public IQueryable<CharacterThings> GetAllCharacterThings(Character character)
         {
-            return GetAllEntity().Where(x => x.CharacterWarehouse.Id.Equals(character.CharacterWarehouse.Id));
+            return GetAllEntity().Where(x => x.WarehouseId.Equals(character.CharacterWarehouse.Id));
         }
 
         public void SetThingToWarehouse(Things thing, CharacterWarehouse warehouse)
         {
             CharacterThings characterThing = new CharacterThings
             {
-                Thing = thing,
-                CharacterWarehouse = warehouse,
+                Id = Guid.NewGuid(),
+                ThingId = thing.Id,
+                WarehouseId = warehouse.Id,
                 Value = 1
             };
 

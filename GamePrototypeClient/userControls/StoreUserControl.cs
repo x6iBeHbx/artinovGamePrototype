@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using GamePrototypeClasses.game.character;
-using GamePrototypeClasses.game.thinks;
 using GamePrototypeClient.GamePrototypeServiceReference;
 
 namespace GamePrototypeClient.userControls
@@ -51,31 +49,31 @@ namespace GamePrototypeClient.userControls
             {
                 description += " Health: +" + thing.Health;
             }
-            else if (thing.Mana > 0)
+            if (thing.Mana > 0)
             {
                 description += " Mana: +" + thing.Mana;
             }
-            else if (thing.Defense > 0)
+            if (thing.Defense > 0)
             {
                 description += "Defense: +" + thing.Defense;
             }
-            else if (thing.Attack > 0)
+            if (thing.Attack > 0)
             {
                 description += "Attack: +" + thing.Attack;
             }
-            else if (thing.Agility > 0)
+            if (thing.Agility > 0)
             {
                 description += "Agility: +" + thing.Agility;
             }
-            else if (thing.Intelligence > 0)
+            if (thing.Intelligence > 0)
             {
                 description += "Intelligence: +" + thing.Intelligence;
             }
-            else if (thing.MagicAttack > 0)
+            if (thing.MagicAttack > 0)
             {
                 description += "MagicAttack: +" + thing.MagicAttack;
             }
-            else if (thing.MagicDefence > 0)
+            if (thing.MagicDefence > 0)
             {
                 description += "MagicDefence: +" + thing.MagicDefence;
             }

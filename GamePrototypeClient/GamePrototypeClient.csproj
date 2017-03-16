@@ -158,6 +158,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Service References\GamePrototypeServiceReference\GamePrototypeClient.GamePrototypeServiceReference.Character.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GamePrototypeServiceReference\GamePrototypeClient.GamePrototypeServiceReference.CharacterThings.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GamePrototypeServiceReference\GamePrototypeClient.GamePrototypeServiceReference.CharacterWarehouse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GamePrototypeServiceReference\GamePrototypeClient.GamePrototypeServiceReference.Things.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GamePrototypeServiceReference\GamePrototypeClient.GamePrototypeServiceReference.UserProfile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\GamePrototypeServiceReference\GamePrototypeService.wsdl" />
     <None Include="Service References\GamePrototypeServiceReference\GamePrototypeService.xsd">
       <SubType>Designer</SubType>
@@ -207,12 +222,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GamePrototype\GamePrototypeClasses.csproj">
-      <Project>{4435e788-e418-42ad-ab03-3a1204b86f0f}</Project>
-      <Name>GamePrototypeClasses</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="core\" />

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.character.warehouse" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" />
-  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" />
+  <xs:import schemaLocation="http://localhost:52565/GamePrototypeService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="CharacterWarehouse">
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q1:ValueEntity">
@@ -20,8 +20,8 @@
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.core" base="q2:ValueEntity">
         <xs:sequence>
-          <xs:element minOccurs="0" name="CharacterWarehouse" nillable="true" type="tns:CharacterWarehouse" />
-          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/GamePrototypeClasses.game.thinks" minOccurs="0" name="Thing" nillable="true" type="q3:Things" />
+          <xs:element minOccurs="0" name="ThingId" type="ser:guid" />
+          <xs:element minOccurs="0" name="WarehouseId" type="ser:guid" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

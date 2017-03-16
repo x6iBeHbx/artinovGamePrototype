@@ -9,13 +9,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GamePrototypeClasses.core
 {
-    [DataContract]
+    [Serializable, DataContract]
     public class IdEntity
     {
         [Key]
         [Required]
+        [DataMember]
         public Guid Id { get; set; }
-
         public IdEntity()
         {
             Id = Guid.NewGuid();

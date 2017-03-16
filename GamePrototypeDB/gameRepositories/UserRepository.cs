@@ -16,5 +16,9 @@ namespace GamePrototypeDB.gameRepositories
                 .Include(x => x.UserCharacter);
         }
 
+        public UserProfile GetUserByLogin(string login)
+        {
+            return GetAll().FirstOrDefault(x => x.Login.Equals(login));
+        }
     }
 }

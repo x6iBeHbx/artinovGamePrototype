@@ -52,6 +52,7 @@ namespace GamePrototypeWcf
 
         public UserProfile GetUserByLogin(string login)
         {
+            var temp = _serverLogicManager.UserProfileServerLogic.GetUserByLogin(login);
             return _serverLogicManager.UserProfileServerLogic.GetUserByLogin(login);
         }
 
@@ -68,6 +69,11 @@ namespace GamePrototypeWcf
         public IQueryable<Things> GetAllThings()
         {
             return _serverLogicManager.ThingsServerLogic.GetAllThings();
+        }
+
+        public Things GetThingById(Guid id)
+        {
+            return _serverLogicManager.ThingsServerLogic.GetEntityById(id);
         }
 
         public IQueryable<CharacterThings> GetAllCharacterThings(Character character)
